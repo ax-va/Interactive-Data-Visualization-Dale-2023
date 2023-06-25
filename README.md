@@ -19,7 +19,7 @@
 <script src="/static/libs/d3.min.js"></script>
 ```
 
-## MongoDB test
+## MongoDB
 Installing manually on Ubuntu:
 https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-ubuntu/
 ```commandline
@@ -41,4 +41,3 @@ C:\mongodb\bin\mongod.exe
 MongoDB with Docker: incompatible SSL libs: https://www.mongodb.com/community/forums/t/installing-mongodb-over-ubuntu-22-04/159931
 ```commandline
 sudo docker run -dp 27017:27017 -v local-mongo:/data/db --name local-mongo --restart=always mongo
-
