@@ -2,13 +2,13 @@
 
 ## Using JavaScript libraries
 ```javascript
-// Content Delivery Networks (CDN)
+// either by content delivery networks (CDN)
 <script
     src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.1.1/d3.min.js"
     charset="utf-8">
 </script>
 
-// Installing Libraries Locally
+// or by installing libraries locally
 // my_project/
 // |--static
 //    |----css
