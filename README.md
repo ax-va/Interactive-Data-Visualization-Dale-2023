@@ -19,7 +19,7 @@
 <script src="/static/libs/d3.min.js"></script>
 ```
 
-## MongoDB
+## MongoDB test
 Installing manually on Ubuntu:
 https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-ubuntu/
 ```commandline
