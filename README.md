@@ -1,6 +1,6 @@
 # Interactive-Data-Visualization-in-Browser-Dale-2023
 
-## Using JavaScript libs:
+## Using JavaScript libs
 ```javascript
 // either by content delivery networks (CDN)
 <script
@@ -19,7 +19,7 @@
 <script src="/static/libs/d3.min.js"></script>
 ```
 
-## MongoDB:
+## MongoDB
 Installing manually on Ubuntu:
 https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-ubuntu/
 ```commandline
