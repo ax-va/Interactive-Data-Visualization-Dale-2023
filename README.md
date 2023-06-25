@@ -10,11 +10,11 @@
 
 // or by installing libraries locally
 // my_project/
-// |--static
-//    |----css
-//    |----data
-//    |----libs
+// |--static/
+//    |----css/
+//    |----data/
+//    |----libs/
 //         |----d3.mi.js
-//    |--js
+//    |--js/
 <script src="/static/libs/d3.min.js"></script>
 ```
