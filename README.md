@@ -38,9 +38,7 @@ md "\data\db"
 // start a server instance
 C:\mongodb\bin\mongod.exe
 ```
-MongoDB with Docker:
-
-incompatible SSL libs: https://www.mongodb.com/community/forums/t/installing-mongodb-over-ubuntu-22-04/159931
+MongoDB with Docker: incompatible SSL libs: https://www.mongodb.com/community/forums/t/installing-mongodb-over-ubuntu-22-04/159931
 ```commandline
 sudo docker run -dp 27017:27017 -v local-mongo:/data/db --name local-mongo --restart=always mongo
 ```
