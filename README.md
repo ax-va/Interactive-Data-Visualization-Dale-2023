@@ -1,5 +1,6 @@
 # Interactive-Data-Visualization-in-Browser-Dale-2023
 
+## Using JavaScript libraries
 ```javascript
 // Content Delivery Networks (CDN)
 <script
@@ -13,7 +14,7 @@
 //    |----css
 //    |----data
 //    |----libs
-//        |----d3.mi.js
+//         |----d3.mi.js
 //    |--js
 <script src="/static/libs/d3.min.js"></script>
 ```
