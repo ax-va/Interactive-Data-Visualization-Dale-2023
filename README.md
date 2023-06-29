@@ -36,7 +36,7 @@ Open the browser at:
 ```
 http://localhost:8000/sandpit/
 ```
-Press: Ctrl+Shift+J
+Press to open the Console panel: Ctrl+Shift+J
 
 Stop the server: Ctrl+C
 
