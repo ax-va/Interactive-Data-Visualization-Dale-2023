@@ -10,7 +10,7 @@ Use libraries either by content delivery networks (CDN)
 ```
 or by installing libraries locally
 ```javascript
-// my_project/
+// project/
 // |--static/
 //    |----css/
 //    |----data/
