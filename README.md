@@ -22,7 +22,7 @@ or by installing libraries locally
 <script src="/static/libs/d3.min.js"></script>
 ```
 
-## Development Server
+## Development Server and JavaScript in Chrome
 Start a development server in the project directory using Python’s http module:
 ```commandline
 python -m http.server 8000
@@ -30,8 +30,6 @@ python -m http.server 8000
 ```commandline
 python3 -m http.server 8000
 ```
-
-## JavaScript in Chrome
 Open the browser at:
 ```
 http://localhost:8000/sandpit/
