@@ -35,7 +35,7 @@ http://localhost:8000/sandpit/
 ```
 Press: Ctrl+Shift+J
 
-Stop the server: Crtl+C
+Stop the server: Ctrl+C
 
 ## MongoDB
 Install manually on Ubuntu:
