@@ -25,6 +25,9 @@ or by installing libraries locally
 ## Development Server
 Start a development server in the project directory using Python’s http module:
 ```commandline
+python -m http.server 8000
+```
+```commandline
 python3 -m http.server 8000
 ```
 
