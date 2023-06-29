@@ -1,7 +1,7 @@
 # Interactive-Data-Visualization-in-Browser-Dale-2023
 
 ## Using JavaScript libs
-Use libraries either by content delivery networks (CDN)
+Use libraries either by Content Delivery Networks (CDN)
 ```html
 <script
     src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.1.1/d3.min.js"
