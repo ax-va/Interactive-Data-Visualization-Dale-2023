@@ -1,6 +1,6 @@
 # Interactive-Data-Visualization-in-Browser-Dale-2023
 
-## Using JavaScript libs
+## Adding JavaScript libs
 Use libraries either by Content Delivery Networks (CDN)
 ```html
 <script
@@ -22,7 +22,7 @@ or by installing libraries locally
 <script src="/static/libs/d3.min.js"></script>
 ```
 
-## Run JavaScript in Chrome
+## Running JavaScript scripts in Chrome
 Start a development server in the project directory using Python’s http module:
 ```commandline
 python -m http.server 8000
