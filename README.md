@@ -36,9 +36,9 @@ Open the browser at:
 ```
 http://localhost:8000/sandpit/
 ```
-Press to open the Console panel: Ctrl+Shift+J
+Press Ctrl+Shift+J to open the Console panel.
 
-Stop the server: Ctrl+C
+Press Ctrl+C to stop the server.
 
 ## MongoDB
 Install manually on Ubuntu:
