@@ -29,3 +29,7 @@ let processStudentData = function(data, passThreshold=60, meritThreshold=75){
 }
 
 processStudentData(studentData);
+// Bob's (id: 0) final assessment is: PASSED
+// Alice's (id: 1) final assessment is: PASSED WITH MERIT
+// Carol's (id: 2) final assessment is: PASSED
+// Dan's (id: 3) final assessment is: FAILED
