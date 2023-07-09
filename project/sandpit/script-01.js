@@ -6,4 +6,10 @@ data.forEach(function(d){
 });
 
 console.log('Sum = ' + sum);
-// outputs 'Sum = 33'
+// Sum = 33
+
+// 'use strict' directive
+(function(foo){
+  'use strict';
+  // ...
+}(window.foo = window.foo || {}));
