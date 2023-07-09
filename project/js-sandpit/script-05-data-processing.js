@@ -5,7 +5,7 @@ let studentData = [
     {'name': 'Dan', id:3, 'scores':[64, 58, 53, 62]},
 ];
 
-function processStudentData(data, passThreshold=60, meritThreshold=75){
+let processStudentData = function(data, passThreshold=60, meritThreshold=75){
     data.forEach(function(sdata){
         let av = sdata.scores.reduce(function(prev, current){
             return prev+current;
