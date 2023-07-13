@@ -32,7 +32,7 @@ python3 -m http.server 8000
 ```
 Open the browser at:
 ```
-http://localhost:8000/sandpit/
+http://localhost:8000/js-sandpit/
 ```
 Press Ctrl+Shift+J to open the Console panel.
 
