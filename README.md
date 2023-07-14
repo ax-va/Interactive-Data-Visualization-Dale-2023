@@ -19,7 +19,7 @@ or by installing libraries locally
 //    |--js/
 ```
 ```html
-<script src="/static/libs/d3.min.js"></script>
+<script src="/static/libs/d3.v7.min.js"></script>
 ```
 
 ## Running JavaScript scripts in Chrome
