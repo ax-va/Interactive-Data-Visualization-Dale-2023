@@ -1,4 +1,4 @@
-# Interactive-Data-Visualization-in-Browser-Dale-2023
+# Interactive-Data-Visualization-Dale-2023
 
 ## Adding JavaScript libs
 Use libraries either by Content Delivery Networks (CDN)
