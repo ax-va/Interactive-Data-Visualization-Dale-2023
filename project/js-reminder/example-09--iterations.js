@@ -1,3 +1,6 @@
+// Returns indices instead of items themselves.
+// The order is not guaranteed, so the indices
+// could be returned in nonconsecutive order.
 for(let i in ['A', 'B', 'C', 'D', 'E', 'F']){
   console.log(i);
 }
@@ -8,10 +11,8 @@ for(let i in ['A', 'B', 'C', 'D', 'E', 'F']){
 // 4
 // 5
 
-// Returns indices instead of values.
-// The order is not guaranteed.
-
 let array = ['A0', 'B1', 'C2', 'D3', 'E4', 'F5'];
+// functional method forEach() applied to the array object
 array.forEach(function(value, index){
   console.log(value); console.log(index);
 })
@@ -28,8 +29,10 @@ array.forEach(function(value, index){
 // F5
 // 5
 
+// Objects are pseudodictionaries
 let obj = {a:3, b:2, c:4};
-for (let prop in obj) {
+// Objects could have inherited properties from the prototyping chain
+for(let prop in obj) {
   if(obj.hasOwnProperty(prop)) {
     console.log("o." + prop + " = " + obj[prop]);
   }
@@ -38,7 +41,9 @@ for (let prop in obj) {
 // o.b = 2
 // o.c = 4
 
+// Objects are pseudodictionaries
 let obj2 = {a:33, b:22, c:444};
+// Iterate through the key-value pairs using the entries() method
 for (const [key, value] of Object.entries(obj2)) {
   console.log(`${key}: ${value}`);
 }

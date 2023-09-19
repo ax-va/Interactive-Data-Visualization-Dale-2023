@@ -23,7 +23,7 @@ or by installing libraries locally
 ```
 
 ## Running JavaScript scripts in Chrome
-Start a development server in the project directory using Python’s http module:
+Start a development server in the 'project' directory using Python’s http module:
 ```commandline
 python -m http.server 8000
 ```
@@ -32,7 +32,7 @@ python3 -m http.server 8000
 ```
 Open the browser at:
 ```
-http://localhost:8000/js-sandpit/
+http://localhost:8000/js-reminder/
 ```
 Press Ctrl+Shift+J to open the Console panel.
 
