@@ -32,7 +32,7 @@ python3 -m http.server 8000
 ```
 Open the browser at:
 ```
-http://localhost:8000/js-refreshing/
+http://localhost:8000/js-sandbox/
 ```
 Press Ctrl+Shift+J to open the Console panel.
 
