@@ -12,7 +12,9 @@ for(let i in ['A', 'B', 'C', 'D', 'E', 'F']){
 // 5
 
 let array = ['A0', 'B1', 'C2', 'D3', 'E4', 'F5'];
-// functional method forEach() applied to the array object
+// Functional method forEach() applied to the array object.
+// forEach and the functional map, reduce, and filter 
+// supply the iterated item and its index to the callback function.
 array.forEach(function(value, index){
   console.log(value); console.log(index);
 })
