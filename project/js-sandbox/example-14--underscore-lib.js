@@ -26,3 +26,4 @@ let average = function(l){
 return sum/l.length;
 };
 console.log('Average morning time is ' + average(mTimes));
+// Average morning time is 33.81818181818182

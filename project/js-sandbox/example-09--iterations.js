@@ -33,7 +33,8 @@ array.forEach(function(value, index){
 
 // Objects are pseudodictionaries
 let obj = {a:3, b:2, c:4};
-// Objects could have inherited properties from the prototyping chain
+// Objects could have inherited properties from the prototyping chain.
+// The obsolete iteration for old browsers:
 for(let prop in obj) {
   if(obj.hasOwnProperty(prop)) {
     console.log("o." + prop + " = " + obj[prop]);
@@ -52,3 +53,14 @@ for (const [key, value] of Object.entries(obj2)) {
 // a: 33
 // b: 22
 // c: 44
+
+Object.keys(obj2).forEach(function(key, index){
+  console.log("key: " + key);
+  console.log("index: " + index);
+})
+// key: a
+// index: 0
+// key: b
+// index: 1
+// key: c
+// index: 2
