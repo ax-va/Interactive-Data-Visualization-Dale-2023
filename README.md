@@ -76,3 +76,10 @@ jupyter notebook
 
 ## PEP8 Online
 http://pep8online.com/
+
+## Fetch API
+https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+
+## OOP, JavaScript, and so-called Classes, Reginald Braithwaite
+"The difference between a prototype and a class is similar to the difference between a model home and a blueprint for a home"
+https://raganwald.com/2015/05/11/javascript-classes.html
