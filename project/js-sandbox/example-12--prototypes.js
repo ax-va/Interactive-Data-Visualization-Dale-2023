@@ -40,8 +40,8 @@ let harpo = new CitizenV1('Harpo M.', 'Freedonia');
 groucho.logDetails.call(harpo);
 // Citizen Harpo M. from Freedonia
 
-// Since ECMAScript 5, Object.create method is 
-// a better way to create objects anCitizen is now an object rather than a constructor functiond to implement inheritance.
+// Since ECMAScript 5, Object.create method is a better way to create objects.
+// Citizen is now an object rather than a constructor functiond to implement inheritance.
 // This usage is recommended:
 let Citizen = {
   setCitizen: function(name, country){
