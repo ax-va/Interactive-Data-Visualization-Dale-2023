@@ -83,3 +83,30 @@ https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
 ## OOP, JavaScript, and so-called Classes, Reginald Braithwaite
 "The difference between a prototype and a class is similar to the difference between a model home and a blueprint for a home"
 https://raganwald.com/2015/05/11/javascript-classes.html
+
+## SQLAlchemy
+https://www.sqlalchemy.org/library.html#reference
+
+## SQLAlchemy 1.4 documentation
+https://docs.sqlalchemy.org/en/14/index.html
+
+## SQLAlchemy 2.0 documentation
+https://docs.sqlalchemy.org/en/20/index.html
+
+## SQLAlchemy 1.4 engine configuration
+https://docs.sqlalchemy.org/en/14/core/engines.html
+
+## SQLAlchemy 2.0 engine configuration
+https://docs.sqlalchemy.org/en/20/core/engines.html
+
+## SQLAlchemy 1.4 declarative mapping
+https://docs.sqlalchemy.org/en/14/orm/mapping_styles.html#declarative-mapping
+
+## SQLAlchemy 2.0 declarative mapping
+https://docs.sqlalchemy.org/en/20/orm/mapping_styles.html#declarative-mapping
+
+## SQLAlchemy querying methods
+https://docs.sqlalchemy.org/en/20/orm/queryguide/query.html
+
+## Dataset website
+https://dataset.readthedocs.io/en/latest/
