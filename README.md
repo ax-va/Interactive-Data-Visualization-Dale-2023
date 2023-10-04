@@ -110,3 +110,18 @@ https://docs.sqlalchemy.org/en/20/orm/queryguide/query.html
 
 ## Dataset website
 https://dataset.readthedocs.io/en/latest/
+
+## MongoDB: explaining BSON with examples
+https://www.mongodb.com/basics/bson
+
+## MongoDB: query documentations
+https://www.mongodb.com/docs/manual/tutorial/query-documents/
+
+## International Standard Organization (ISO) 8601 time format
+https://en.wikipedia.org/wiki/ISO_8601
+
+## Coordinated Universal Time (UTC)
+https://en.wikipedia.org/wiki/Coordinated_Universal_Time
+
+## Chrome DevTools
+https://developer.chrome.com/docs/devtools/
