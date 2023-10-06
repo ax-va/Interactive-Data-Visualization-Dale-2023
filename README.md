@@ -25,14 +25,14 @@ or by installing libraries locally
 ## Running JavaScript scripts in Chrome
 Start a development server in the 'project' directory using Python’s http module:
 ```commandline
-python -m http.server 8000
+python -m http.server 8080
 ```
 ```commandline
-python3 -m http.server 8000
+python3 -m http.server 8080
 ```
 Open the browser at:
 ```
-http://localhost:8000/js-sandbox/
+http://localhost:8080/sandbox/
 ```
 Press Ctrl+Shift+J to open the Console panel.
 

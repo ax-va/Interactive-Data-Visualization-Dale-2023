@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css" type="text/css" />
+<style>
+    #my-viz { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    #lead { font-size: 150%; }
+    .alert { color:red; background:yellow }
+    #special-alert { background:yellow; color:black }
+</style>
+<body>
+    <!-- page content -->
+    <h2>A Level-2 Header</h2>
+        <p>
+            A paragraph of body text with a line break here</br>
+            and a second paragraph...
+        </p>
+    <div id="my-chart-wrapper" class="chart-holder dev">
+        <div id="my-chart" class="bar chart">
+            <!-- this is a placeholder, with parent #my-chart-wrapper -->
+        </div>
+    </div>
+    <div id="inline-examples">
+        <img src="path/to/image.png" id="prettypic">
+            <p>This is a <a href="link-url">link</a> to
+                <span class="url">link-url</span>
+            </p>
+    </div>
+    <div style="display: flex; gap: 50px">
+        <div>
+            <h3>Ordered (ol) list</h3>
+                <ol>
+                    <li>First Item</li>
+                    <li>Second Item</li>
+                </ol>
+        </div>
+        <div>
+            <h3>Unordered (ul) list</h3>
+                <ul>
+                    <li>First Item</li>
+                    <li>Second Item</li>
+                </ul>
+        </div>
+    </div>
+    <table id="chart-data">
+        <tr>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Albert Einstein</td>
+            <td>Physics</td>
+            <td>Switzerland</td>
+        </tr>
+    </table>
+    <div id="my-viz">
+        <div id="lead">
+            <h2>A Leader header</h2>
+            <p>Some enlarged text for
+                <span class="alert" id="special-alert">emphasis</span>
+            </p>
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
