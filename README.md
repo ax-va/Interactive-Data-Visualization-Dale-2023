@@ -34,9 +34,12 @@ Open the browser at:
 ```
 http://localhost:8080/sandbox/
 ```
-Press Ctrl+Shift+J to open the Console panel.
+Press Ctrl+Shift+J to open the Console tab.
 
 Press Ctrl+C to stop the server.
+
+## Chrome
+Press Ctrl+Shift+I to open the Elements tab (or More Tools -> Developer Tools / Weitere Tools -> Entwicklertools).
 
 ## MongoDB
 Install manually on Ubuntu:
