@@ -3,7 +3,9 @@
     /* flex-direction: row; */ /* default */
     /* flex-direction: column; */
     /* flex-direction: column-reverse; */
-    justify-content: space-between;  /* Distributes the boxes evenly in their container */
+    gap: 20px;  /* Adds a gap of 20 pixels between the boxes */
+    /* justify-content: center;  /* Centers the content in the horizontal */
+    align-items: center;  /* Centers the content in the vertical */
     width: 600px;
     height: 400px;
     border: 2px solid red;
