@@ -1,0 +1,5 @@
+SVG advantages:
+- scaling operations;
+- handling text;
+- user interaction (e.g., mouse hovering or clicking) is native to the browser;
+- inspecting and adapting graphic elements using browser’s development tools.

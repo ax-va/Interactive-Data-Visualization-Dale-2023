@@ -128,3 +128,12 @@ https://en.wikipedia.org/wiki/Coordinated_Universal_Time
 
 ## Chrome DevTools
 https://developer.chrome.com/docs/devtools/
+
+## CSS grid layout
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout
+
+## A Complete Guide to Flexbox 
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+## CSS Flexbox Cheatsheet
+https://flexboxsheet.com

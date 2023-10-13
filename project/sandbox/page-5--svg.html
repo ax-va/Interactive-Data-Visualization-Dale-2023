@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+    #chart {
+        background: #eee;
+        font-family: sans-serif;
+    }
+    #chart circle { fill: rgb(255, 0, 0); }
+    #chart line { stroke: #555555; stroke-width: 2; }
+    #chart rect { stroke: red; fill: white; }
+    #chart polygon { fill: green; }
+    #chart text { font-size: 16px; }
+    #chart text#title { font-size: 18px; }
+</style>
+
+<svg id="chart" width="600" height="480">
+    <!-- The y coordinate is measured from the top of the <svg> '#chart' container -->
+    <circle r="15" cx="100" cy="50"></circle>
+    <!-- CSS overwrites properties -->
+    <circle r="30" cx="200" cy="225" fill="yellow"></circle>
+    <!-- the y-axis -->
+    <line x1="20" y1="20" x2="20" y2="450"></line>
+    <!-- the x-axis -->
+    <line x1="20" y1="450" x2="550" y2="450"></line>
+    <!-- dummy legend -->
+    <rect x="450" y="5" width="100" height="50"></rect>
+    <!-- dummy triangle -->
+    <polygon points="300,250, 350,250, 325,200"></polygon>
+    <!-- text-anchor stipulates where the text is placed relative to its x position. -->
+    <!-- The options are start, middle, and end; start is the default. -->
+    <text id="title" text-anchor="middle" x="300" y="30">
+        A Dummy Chart
+    </text>
+    <!-- dy, dx are fine adjustments before rotating -->
+    <text x="20" y="20" transform="rotate(-90,20,20)" text-anchor="end" dy="1.05em" dx="-10em">
+        y axis label
+    </text>
+</svg>
