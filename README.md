@@ -137,3 +137,15 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
 ## CSS Flexbox Cheatsheet
 https://flexboxsheet.com
+
+## Paths, arcs
+https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths#arcs
+
+## A Closer Look at SVG Path Data
+https://www.sitepoint.com/closer-look-svg-path-data/
+
+## Paths
+https://www.w3.org/TR/SVG/paths.html
+
+## SVG path element 
+https://jenkov.com/tutorials/svg/path-element.html
