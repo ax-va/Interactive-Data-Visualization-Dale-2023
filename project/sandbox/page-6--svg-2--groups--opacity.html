@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+    #chart { background: #eee; font-family: sans-serif; }
+    #group3 circle { opacity: 0.33; }
+</style>
+
+<svg id="chart" width="600" height="480">
+    <g id="group1" transform="translate(150,75)">
+        <!-- The positions of circle, rect, and path elements are relative to the translated group -->
+        <circle cx="50" cy="0" r="25" fill="red"/>
+        <rect x="30" y="10" width="40" height="20" fill="blue"/>
+        <path d="M-20 -10L50 -10L10 60Z" fill="green"/>
+        <circle r="10" fill="yellow"/>
+    </g>
+    <g id="group2" transform="translate(250,175), scale(0.5), rotate(90)">
+        <!-- The positions of circle, rect, and path elements are relative to the translated group -->
+        <circle cx="50" cy="0" r="25" fill="red"/>
+        <rect x="30" y="10" width="40" height="20" fill="blue"/>
+        <path d="M-20 -10L50 -10L10 60Z" fill="green"/>
+        <circle r="10" fill="yellow"/>
+    </g>
+    <g id="group3" transform="translate(350, 275)">
+        <circle cx="0" cy="-20" r="30" fill="red"/>
+        <circle cx="17.3" cy="10" r="30" fill="green"/>
+        <circle cx="-17.3" cy="10" r="30" fill="blue"/>
+    </g>
+</svg>
