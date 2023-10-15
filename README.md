@@ -149,3 +149,12 @@ https://www.w3.org/TR/SVG/paths.html
 
 ## SVG path element 
 https://jenkov.com/tutorials/svg/path-element.html
+
+## Python requests
+https://requests.readthedocs.io/en/latest/
+
+## Python requests quickstart
+https://requests.readthedocs.io/en/latest/user/quickstart/
+
+## Python guide gotchas
+https://docs.python-guide.org/writing/gotchas/
