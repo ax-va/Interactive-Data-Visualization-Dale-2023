@@ -1,12 +1,12 @@
 # Interactive-Data-Visualization-Dale-2023
 
+## Original code by Kyran Dale
+https://github.com/Kyrand/dataviz-with-python-and-js-ed-2
+
 ## Adding JavaScript libs
 Use libraries either by Content Delivery Networks (CDN)
 ```html
-<script
-    src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.1.1/d3.min.js"
-    charset="utf-8">
-</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.1.1/d3.min.js" charset="utf-8"></script>
 ```
 or by installing libraries locally
 ```javascript
