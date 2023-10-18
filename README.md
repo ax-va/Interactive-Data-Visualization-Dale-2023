@@ -158,3 +158,6 @@ https://requests.readthedocs.io/en/latest/user/quickstart/
 
 ## Python guide gotchas
 https://docs.python-guide.org/writing/gotchas/
+
+## pandaSDMX
+https://pypi.org/project/pandaSDMX/
