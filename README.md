@@ -161,3 +161,6 @@ https://docs.python-guide.org/writing/gotchas/
 
 ## pandaSDMX
 https://pypi.org/project/pandaSDMX/
+
+## Beautiful Soup filters
+https://www.crummy.com/software/BeautifulSoup/bs4/doc/#kinds-of-filters
