@@ -168,5 +168,5 @@ https://www.crummy.com/software/BeautifulSoup/bs4/doc/#kinds-of-filters
 ## Beatiful Soup: find_parents and find_parent
 https://www.crummy.com/software/BeautifulSoup/bs4/doc/#find-parents-and-find-parent
 
-## Comparision of CSS selectors and Xpaths
+## Xpath
 https://devhints.io/xpath
