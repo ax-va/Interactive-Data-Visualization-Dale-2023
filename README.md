@@ -176,3 +176,6 @@ https://doc.scrapy.org/en/latest/topics
 
 ## The N-dimensional array (ndarray)
 https://numpy.org/doc/stable/reference/arrays.ndarray.html
+
+## Mathematical functions in NumPy
+https://numpy.org/doc/stable/reference/routines.math.html
