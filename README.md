@@ -171,5 +171,8 @@ https://www.crummy.com/software/BeautifulSoup/bs4/doc/#find-parents-and-find-par
 ## Xpath
 https://devhints.io/xpath
 
+## Scrapy
+https://doc.scrapy.org/en/latest/topics
+
 ## The N-dimensional array (ndarray)
 https://numpy.org/doc/stable/reference/arrays.ndarray.html
