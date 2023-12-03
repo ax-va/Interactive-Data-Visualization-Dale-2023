@@ -180,5 +180,8 @@ https://numpy.org/doc/stable/reference/arrays.ndarray.html
 ## Mathematical functions in NumPy
 https://numpy.org/doc/stable/reference/routines.math.html
 
+## Flask
+https://flask.palletsprojects.com/en/3.0.x/
+
 ## Jinja
 https://jinja.palletsprojects.com/en/latest/
