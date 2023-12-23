@@ -185,3 +185,15 @@ https://flask.palletsprojects.com/en/3.0.x/
 
 ## Jinja
 https://jinja.palletsprojects.com/en/latest/
+
+## Flask-SQLAlchemy
+https://flask-sqlalchemy.palletsprojects.com/en/3.1.x/
+
+## marshmallow: simplified object serialization
+https://marshmallow.readthedocs.io/en/stable/
+
+## Flask-Marshmallow
+https://flask-marshmallow.readthedocs.io/en/latest/
+
+## marshmallow-sqlalchemy
+https://marshmallow-sqlalchemy.readthedocs.io/en/latest/
