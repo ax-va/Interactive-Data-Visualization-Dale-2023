@@ -1,6 +1,7 @@
 // Run:
 // python server_restful_api_with_paginating.py
-// from https://github.com/ax-va/Python-Topics/blob/main/topics/flask_/server_restful_api_with_paginating.py
+// from
+// https://github.com/ax-va/Python-Topics/blob/main/topics/flask_/server_restful_api_with_paginating.py
 
 let BASE_URL = 'http://localhost:8000/'
 
