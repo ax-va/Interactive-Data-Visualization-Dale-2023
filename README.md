@@ -197,3 +197,6 @@ https://flask-marshmallow.readthedocs.io/en/latest/
 
 ## marshmallow-sqlalchemy
 https://marshmallow-sqlalchemy.readthedocs.io/en/latest/
+
+## Heroku (not free for deployment)
+https://www.heroku.com/
