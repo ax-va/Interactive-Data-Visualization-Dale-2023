@@ -13,7 +13,7 @@ async function getData(toFetch='winners/?category=Physics') {
             .then(res => {return res.json()})
 
         data = data.concat(response.winners) // Add the page results
-        toFetch = response.pagination.next_page  // To handle the next page
+        toFetch = response.pagination.next_page // To handle the next page
         if(!toFetch) break // No next page so break out of the loop
     }
     return data
