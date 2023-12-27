@@ -1,7 +1,9 @@
-// Run:
+// Run on localhost:8000:
 // python server_restful_api_with_paginating.py
 // from
 // https://github.com/ax-va/Python-Topics/blob/main/topics/flask_/server_restful_api_with_paginating.py
+// Then run on localhost:8080:
+// python -m http.server 8080
 
 let BASE_URL = 'http://localhost:8000/'
 
