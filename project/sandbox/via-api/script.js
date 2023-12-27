@@ -19,11 +19,11 @@ async function getData(toFetch='winners/?category=Physics') {
     return data
 }
 
-async function logToConsole() {
+async function handleData() {
     let data = await getData('winners/?born_in=Germany')
     console.log(`${data.length} Nobel Prize winners were born in Germany:`, data)
     // Send the data to a suitable charting function
     //...
 }
 
-logToConsole()
+handleData()
