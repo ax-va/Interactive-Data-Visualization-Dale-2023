@@ -2,6 +2,8 @@ import numpy as np
 import pandas as pd
 import plotly.express as px
 
+# Prepare data in dataframe
+
 df = pd.read_parquet('../data/nobel_winners_cleaned.parquet')  # precondition: fastparquet installed
 df.info()
 # <class 'pandas.core.frame.DataFrame'>
@@ -79,6 +81,8 @@ df_regions = by_year_nat_sz[[r['label'] for r in regions]].cumsum()
 # 2023             390.0   365.0  29.0
 #
 # [123 rows x 3 columns]
+
+# Plot data in dataframe
 
 fig = px.line(
     df_regions,
