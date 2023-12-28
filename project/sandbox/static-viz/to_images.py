@@ -155,8 +155,16 @@ ax = (df_final[df_final.nobel_wins > 2]
       .sort_values(by='nobel_wins_per_capita', ascending=True)
       .nobel_wins_per_capita.plot(kind='barh', figsize=(5, 10), title="Relative prize numbers"))
 ax.set_xlabel("Nobel prizes per capita")
-ax.set_facecolor("#eee")
+ax.set_facecolor("#fff1e5")
 plt.tight_layout()
-plt.savefig("country_relative_prize_numbers.png")
-plt.savefig("country_relative_prize_numbers.svg")
+plt.savefig(
+    "images/country_relative_prize_numbers.png",
+    facecolor=ax.get_facecolor(),
+    edgecolor='none',
+)
+plt.savefig(
+    "images/country_relative_prize_numbers.svg",
+    facecolor=ax.get_facecolor(),
+    edgecolor='none',
+)
 plt.close()
