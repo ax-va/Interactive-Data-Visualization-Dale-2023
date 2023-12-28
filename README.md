@@ -182,3 +182,6 @@ https://www.heroku.com/
 
 ## Plotly Express
 https://plotly.com/python/plotly-express/
+
+## Plotly lines
+https://plotly.com/python/reference/layout/shapes/#layout-shapes-items-shape-line
