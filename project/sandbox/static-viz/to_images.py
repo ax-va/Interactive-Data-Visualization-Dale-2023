@@ -3,7 +3,7 @@ import pandas as pd
 
 # Prepare data in dataframe
 
-df_winners = pd.read_parquet('data/nobel_winners_cleaned.parquet')  # precondition: fastparquet installed
+df_winners = pd.read_parquet('../data/nobel_winners_cleaned.parquet')  # precondition: fastparquet installed
 df_winners.info()
 # <class 'pandas.core.frame.DataFrame'>
 # Index: 974 entries, Richard Adolf Zsigmondy to John Carew Eccles
