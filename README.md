@@ -179,3 +179,6 @@ https://marshmallow-sqlalchemy.readthedocs.io/en/latest/
 
 ## Heroku (not free for deployment)
 https://www.heroku.com/
+
+## Plotly Express
+https://plotly.com/python/plotly-express/
