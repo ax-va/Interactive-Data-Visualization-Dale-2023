@@ -153,7 +153,7 @@ df_final[df_final.nobel_wins > 2]
 # Israel             9216900        12.0           1.301956e-06
 # Hungary            9749763         8.0           8.205328e-07
 
-# Plot data in dataframe
+# Plot data in dataframe to static images
 
 ax = (df_final[df_final.nobel_wins > 2]
       .sort_values(by='nobel_wins_per_capita', ascending=True)
