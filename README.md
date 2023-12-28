@@ -44,32 +44,11 @@ Press Ctrl+Shift+I to open the Elements tab (or More Tools -> Developer Tools / 
 ## MongoDB
 Install manually on Ubuntu:
 https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-ubuntu/
-```commandline
-sudo mkdir /data
-sudo mkdir /data/db
-```
-Set ownership to yourself
-```commandline
-sudo chown 'whoami' /data/db
-```
-Start a server instance
-```commandline
-mongod
-```
+
 Install manually on Windows:
 https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-windows/#run-mongodb-community-edition
-```commandline
-cd C:\
-md "\data\db"
-```
-Start a server instance
-```commandline
-C:\mongodb\bin\mongod.exe
-```
+
 MongoDB with Docker: incompatible SSL libs: https://www.mongodb.com/community/forums/t/installing-mongodb-over-ubuntu-22-04/159931
-```commandline
-sudo docker run -dp 27017:27017 -v local-mongo:/data/db --name local-mongo --restart=always mongo
-```
 
 ## Jupyter
 Start Jupyter notebooks:
