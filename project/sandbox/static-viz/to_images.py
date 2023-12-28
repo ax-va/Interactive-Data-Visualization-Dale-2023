@@ -1,6 +1,8 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 
+# Prepare data in dataframe
+
 df_winners = pd.read_parquet('data/nobel_winners_cleaned.parquet')  # precondition: fastparquet installed
 df_winners.info()
 # <class 'pandas.core.frame.DataFrame'>
@@ -150,6 +152,8 @@ df_final[df_final.nobel_wins > 2]
 # Italy             59554023        14.0           2.350807e-07
 # Israel             9216900        12.0           1.301956e-06
 # Hungary            9749763         8.0           8.205328e-07
+
+# Plot data in dataframe
 
 ax = (df_final[df_final.nobel_wins > 2]
       .sort_values(by='nobel_wins_per_capita', ascending=True)
