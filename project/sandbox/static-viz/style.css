@@ -20,6 +20,16 @@ h1.title {
     display: flex;
 }
 
+/* Add a media-screen trigger to apply a different flex-direction value */
+/* When the browser is 1000 pixels wide or less: */
+@media screen and (max-width: 1000px) {
+    #by-country-container {
+            /* Display info-box and charts not in a row,
+            but in a column, and reverse the order */
+            flex-direction: column-reverse;
+        }
+}
+
 .info-box {
     font-family: sans-serif;
     flex: 1;
@@ -29,8 +39,8 @@ h1.title {
 }
 
 .chart-wrapper {
-    display: flex;
-    flex: 2;
+    display: flex;  /* The chart and info-box children of this container are under flex control */
+    flex: 2;  /* Chart-wrapper is twice the width of the info-box */
 }
 
 .chart {
