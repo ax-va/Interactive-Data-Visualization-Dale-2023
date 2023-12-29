@@ -185,3 +185,11 @@ https://plotly.com/python/plotly-express/
 
 ## Plotly lines
 https://plotly.com/python/reference/layout/shapes/#layout-shapes-items-shape-line
+
+## Plotly Mapbox Layers
+https://plotly.com/python/mapbox-layers/
+
+## Geopy
+https://geopy.readthedocs.io/en/latest/
+
+
