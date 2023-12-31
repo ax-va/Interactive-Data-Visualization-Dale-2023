@@ -194,3 +194,6 @@ https://geopy.readthedocs.io/en/latest/
 
 ## Mapbox Access Tokens
 https://plotly.com/python/mapbox-layers/#mapbox-access-tokens-and-when-you-need-them
+
+## Custom Controls in Plotly
+https://plotly.com/python/#controls

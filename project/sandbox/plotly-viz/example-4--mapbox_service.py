@@ -10,7 +10,7 @@ via the px.set_mapbox_access_token() configuration function).
 
 If your layout.mapbox.style does not use data from the Mapbox service, you do not need to register for a Mapbox account.
 
-The code is not proved to be working.
+Cannot prove the code without Mapbox access token.
 """
 import pandas as pd
 import plotly.graph_objs as go
@@ -43,7 +43,8 @@ layout = go.Layout(
         zoom=0.7,
         style='light'
     ),
-    width=875, height=450
+    width=875,
+    height=450,
 )
 
 traces = [
@@ -58,7 +59,7 @@ traces = [
         ),
         text=[f'{locations_name[i]} won {int(x)} total prizes' for i, x in enumerate(totals)],
         hoverinfo='text'
-        )
+    )
 ]
 fig = go.Figure(traces, layout=layout)
 fig.show()

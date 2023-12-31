@@ -14,7 +14,7 @@ fig = px.scatter_mapbox(
     hover_data=['Total'],
     color_discrete_sequence=["olive"],
     zoom=0.7,  # the position of the camera above the Earth
-    size=size
+    size=size,
 )
 fig.update_layout(mapbox_style="carto-positron", width=800, height=450)
 fig.update_layout(margin={"r": 0, "t": 0, "l": 0, "b": 0})
