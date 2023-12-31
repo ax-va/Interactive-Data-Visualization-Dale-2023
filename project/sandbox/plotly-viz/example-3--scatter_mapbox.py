@@ -1,13 +1,9 @@
-import numpy as np
 import pandas as pd
 import plotly.express as px
 
+from utils import calc_marker_radius
+
 df_country_category_geolocation = pd.read_parquet("data/country_category_geolocation_data.parquet")
-
-
-def calc_marker_radius(size, scale=5):
-    return np.sqrt(size / np.pi) * scale
-
 
 size = df_country_category_geolocation['Total'].apply(calc_marker_radius, args=(16,))
 fig = px.scatter_mapbox(
