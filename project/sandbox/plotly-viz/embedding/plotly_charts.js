@@ -1,5 +1,6 @@
 window.PLOTLYENV=window.PLOTLYENV || {};
 if (document.getElementById("d1b5b9e6-a6cc-40bb-9a77-0a3785332d87")) {
+    // Build the chart in the identified container
     Plotly.newPlot(
         "d1b5b9e6-a6cc-40bb-9a77-0a3785332d87",
         [
