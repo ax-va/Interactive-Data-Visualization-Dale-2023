@@ -6,7 +6,7 @@ dataJSON.then(function (data) {
     //     '[{"gender":"male","award_age":60},{"gender":"male","award_age":54},{"gender":"male","award_age":51}]'
     // );
 
-    console.log(data);
+    console.log("Genders and award ages:", data);
 
     let traces = [{
         type: 'violin',
