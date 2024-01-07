@@ -189,17 +189,17 @@ https://plotly.com/python/reference/layout/shapes/#layout-shapes-items-shape-lin
 ## Plotly Mapbox Layers
 https://plotly.com/python/mapbox-layers/
 
-## Plotly.update
-https://plotly.com/javascript/plotlyjs-function-reference/#plotlyupdate
-
-## Geopy
-https://geopy.readthedocs.io/en/latest/
+## Plotly.js functions
+https://plotly.com/javascript/plotlyjs-function-reference/
 
 ## Mapbox Access Tokens
 https://plotly.com/python/mapbox-layers/#mapbox-access-tokens-and-when-you-need-them
 
 ## Custom Controls in Plotly
 https://plotly.com/python/#controls
+
+## Geopy
+https://geopy.readthedocs.io/en/latest/
 
 ## D3.js d3.rollup
 https://observablehq.com/@d3/d3-group
