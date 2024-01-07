@@ -197,3 +197,7 @@ https://plotly.com/python/mapbox-layers/#mapbox-access-tokens-and-when-you-need-
 
 ## Custom Controls in Plotly
 https://plotly.com/python/#controls
+
+## D3.js rollup
+https://observablehq.com/@d3/d3-group
+
