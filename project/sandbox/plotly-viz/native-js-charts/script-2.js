@@ -1,5 +1,5 @@
 function makeChart(data) {
-    // Rollup to an object like {'male':  {'Chemistry' => 185, 'Physiology or Medicine' => 216, 'Physics' => 223, ...
+    // Rollup to an object like {'male':  {'Chemistry': 185, 'Physiology or Medicine': 216, 'Physics': 223, ...
     let cat_groups = d3.rollup(data, v => v.length, d=>d.gender, d=>d.category);
     console.log("Groups:", cat_groups);
 

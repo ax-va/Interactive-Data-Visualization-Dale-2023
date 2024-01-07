@@ -1,7 +1,6 @@
-// Fetch a dataset from the network, based on its URL,
-// in the "static/data" directory
-fetch('/static/data/nobel_winners.json')
+// Fetch a dataset from the network based on its URL
+fetch('data/nobel_winners_cleaned.json')
   .then(function(response) {
-    console.log(response.json())
+    console.log("Fetch:", response.json())
   }
 );
