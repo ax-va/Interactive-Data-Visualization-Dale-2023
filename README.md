@@ -206,3 +206,7 @@ https://observablehq.com/@d3/d3-group
 
 ## Bootstrap (CSS lib)
 https://getbootstrap.com/
+
+## Crossfilter
+http://crossfilter.github.io/crossfilter/
+
