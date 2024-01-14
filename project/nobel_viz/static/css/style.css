@@ -1,0 +1,87 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: #fefefe; /* just off full-white */
+    width: 1000px;
+    margin: 0 auto; /* top and bottom 0, left and right auto */
+}
+
+a:link {
+    color: royalblue;
+    text-decoration: none; /* no underlined hyperlinks */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#title {
+    position: absolute;
+    font-size: 30px;
+    font-weight: 100;
+    top: 20px;
+}
+
+#info {
+    position: absolute;
+    font-size: 11px;
+    top: 18px;
+    width: 300px;
+    right: 0px;
+    line-height: 1.2;
+}
+
+#nbviz {
+    position: absolute;
+    top: 90px; /* Set 90 pixels from the page top to give a space for #title and #info */
+    width: 100%; /* Set a width of 100% to make it expand to the available space */
+}
+
+#chart-holder {
+    width: 100%;
+    height: 750px;
+    position: relative; /* Set the absolute positioning of its child panels to be relative to its top-left corner */
+    padding: 0 0 20px 0; /* top right bottom left */
+}
+
+#chart-holder svg {
+    width: 100%;
+    height: 100%;
+}
+
+#nobel-map, #nobel-winner, #nobel-bar, #nobel-time, #nobel-list{
+    position:absolute;  /* absolute, manually adjusted positioning, relative to the chart-holder parent container */
+}
+
+#nobel-time {
+    top: 0;
+    height: 150px;
+    width: 100%;
+}
+
+#nobel-map {
+    background: azure;
+    top: 160px;
+    width: 700px;
+    height: 350px;
+}
+
+#nobel-winner {
+    top: 510px;
+    left: 700px;
+    height: 240px;
+    width: 300px;
+}
+
+#nobel-bar {
+    top: 510px;
+    height: 240px;
+    width: 700px;
+}
+
+#nobel-list {
+    top: 160px;
+    height: 340px;
+    width: 290px;
+    left: 700px;
+    padding-left: 10px;
+}
