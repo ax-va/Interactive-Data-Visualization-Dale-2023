@@ -4,9 +4,12 @@
 https://github.com/Kyrand/dataviz-with-python-and-js-ed-2
 
 ## Adding JavaScript libs
-Use libraries either by Content Delivery Networks (CDN)
+Content Delivery Network JS
+
+https://cdnjs.com/libraries/d3
+
 ```html
-<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.1.1/d3.min.js" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js" charset="utf-8"></script>
 ```
 or by installing libraries locally
 ```javascript
