@@ -216,3 +216,6 @@ https://github.com/topojson/topojson/blob/master/README.md
 
 ## TopoJSON Latest Release
 https://github.com/topojson/topojson/releases/tag/v3.0.2
+
+## JavaScript's const
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const
