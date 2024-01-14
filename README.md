@@ -4,7 +4,7 @@
 https://github.com/Kyrand/dataviz-with-python-and-js-ed-2
 
 ## Adding JavaScript libs
-By using Content Delivery Network JS
+By using Cloudflare’s Content Delivery Network JS
 
 https://cdnjs.com/libraries/d3
 
