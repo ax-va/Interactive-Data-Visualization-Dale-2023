@@ -11,7 +11,7 @@ https://cdnjs.com/libraries/d3
 ```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js" charset="utf-8"></script>
 ```
-or by installing libraries locally
+or by using libraries placed locally
 ```javascript
 // project/
 // |--static/
@@ -29,8 +29,6 @@ or by installing libraries locally
 Start a development server in the 'project' directory using Python’s http module:
 ```commandline
 python -m http.server 8080
-```
-```commandline
 python3 -m http.server 8080
 ```
 Open the browser at:
