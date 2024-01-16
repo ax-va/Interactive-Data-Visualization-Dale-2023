@@ -44,13 +44,35 @@ nbviz.filterByCategory = function(cat) {
 };
 
 nbviz.getCountryData = function() {
-    // ...
+    // countryDim is Crossfilter dimensions with key-values items like {key:Argentina, value:5}
+    let countryGroups = nbviz.countryDim.group().all();
+    // Use the array’s map method to create a new array with added components from the country dataset
+    let data = countryGroups.map( function(c) {
+        let cData = nbviz.data.countryData[c.key]; // c.key is e.g. 'Australia'
+        let value = c.value;
+        // If per capita value then divide by ppopulation size
+        if(nbviz.valuePerCapita) {
+            value = value / cData.population;
+        };
+
+        return {
+            key: c.key, // e.g., Japan
+            value: value, // e.g., 19 (prizes)
+            code: cData.alpha3Code, // e.g., JPN
+        };
+    })
+    // Use the array’s sort method to make the array descending by value
+    .sort( function(a, b) {
+        return b.value - a.value; // descending
+    });
+
+    return data;
 };
 
+// The array consists of component modules that need updating
 nbviz.callbacks = [];
+// This function is called if the user changes something.
 nbviz.onDataChange = function () {
-    // This function is called if the user changes something.
-    // The updates are in the "callbacks" array.
     nbviz.callbacks.forEach((cb) => cb())
 };
 

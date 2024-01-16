@@ -12,7 +12,7 @@ Promise.all([
     d3.json('static/data/winning_country_data.json'),
     d3.json('static/data/world-110m.json'), // a world map with 110m resolution, source?
     d3.csv('static/data/world-country-names-nobel.csv'),    
-]).then(ready)
+]).then(ready);
     
 function ready([
     winnersData, 
@@ -23,5 +23,11 @@ function ready([
     // STORE OUR COUNTRY-DATA DATASET
     nbviz.data.countryData = countryData
     nbviz.data.winnersData = winnersData
-    //...
+    // MAKE OUR FILTER AND ITS DIMENSIONS
+    nbviz.makeFilterAndDimensions(winnersData) // Allow the user to select subsets of the data
+    // INITIALIZE MENU AND MAP
+    initMenu()
+    initMap(worldMap, countryNames)
+    // TRIGGER UPDATE WITH
 }
+
