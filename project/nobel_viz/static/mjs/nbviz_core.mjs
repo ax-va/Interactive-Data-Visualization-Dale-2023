@@ -31,8 +31,51 @@ let nestDataByYear = function(entries) {
     //...
 };
 
-nbviz.makeFilterAndDimensions = function(winnersData){
-    //...
+// Create a Crossfilter filter and dimensions (e.g., prize category)
+nbviz.makeFilterAndDimensions = function(winnersData) {
+    // ADD OUR FILTER AND CREATE CATEGORY DIMENSIONS
+    nbviz.filter = crossfilter(winnersData);
+
+    // // Create the gender dimension
+    // nbviz.genderDim = nbviz.filter.dimension(function(o) {
+    //     return o.gender;
+    // });
+    // // The filter can be used to return all objects with female gender as follows:
+    // nbviz.genderDim.filter('female');
+    // // top returns the specified number of ordered objects.
+    // // Specifying Infinity9 returns all the filtered data objects.
+    // let femaleWinners = nbviz.genderDim.top(Infinity);
+    // femaleWinners.length // 47
+    // // Reset a dimension
+    // nbviz.genderDim.filter();
+    // // Get the full array
+    // nbviz.genderDim.top(Infinity)
+
+    // // Create the category dimension
+    // nbviz.categoryDim = nbviz.filter.dimension(function(o) {
+    //     return o.category;
+    // });
+
+    // // Filter dimensions in sequence
+    // nbviz.genderDim.filter('female');
+    // nbviz.categoryDim.filter('Physics');
+    // nbviz.genderDim.top(Infinity);
+    // // Remove the Physics category filter
+    // nbviz.categoryDim.filter();
+    // nbviz.genderDim.top(Infinity);
+
+    // nbviz.genderDim.filter(); // Reset gender dimension
+    // let countryGroup = nbviz.countryDim.group(); // Group by default
+    // countryGroup.all();  // Return all groups by key and value
+    // // [
+    // // {key:"Argentina", value:5},
+    // // {key:"Australia", value:9},
+    // // {key:"Austria", value:14},
+    // // ...]
+
+    nbviz.countryDim = nbviz.filter.dimension((o) => o.country);
+    nbviz.categoryDim = nbviz.filter.dimension((o) => o.category);
+    nbviz.genderDim = nbviz.filter.dimension((o) => o.gender);
 };
 
 nbviz.filterByCountries = function(countryNames) {
