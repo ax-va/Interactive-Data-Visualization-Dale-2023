@@ -219,3 +219,9 @@ https://github.com/topojson/topojson/releases/tag/v3.0.2
 
 ## JavaScript's const
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const
+
+## Online editor for frontend code: Codepen
+https://codepen.io/
+
+## VizHub with an online editor
+https://vizhub.com/
