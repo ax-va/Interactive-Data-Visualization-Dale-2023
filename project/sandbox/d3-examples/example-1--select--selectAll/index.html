@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>D3 select() and selectAll() example</title>
+    <style>
+      .message {
+        font-size: 13em;
+        text-align: center;
+      }
+      .highlight {
+        stock: yellow;
+      }
+      .fancy-title {
+        font-weight: bold;
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 id="title" style="font-family:sans-serif;">
+      text placeholder
+    </h2>
+    <svg id="barchart">
+      <rect id="barL" class="bar" x="0" y="20" height="100" width="50" style="fill:rgb(100,200,100)"/>
+      <rect id="barM" class="bar" x="55" y="30" height="100" width="50" style="fill:rgb(100,200,100)"/>
+      <rect id="barR" class="bar" x="110" y="40" height="100" width="50" style="fill:rgb(100,200,100)"/>
+    </svg>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+</html>
