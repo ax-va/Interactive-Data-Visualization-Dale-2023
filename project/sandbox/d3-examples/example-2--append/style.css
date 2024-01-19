@@ -1,0 +1,8 @@
+#barchart {
+  width: 600px;
+  height: 400px;
+}
+
+.bar {
+  fill: #6495ED;
+}
