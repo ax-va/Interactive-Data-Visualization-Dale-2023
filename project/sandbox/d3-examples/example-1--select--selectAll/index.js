@@ -26,7 +26,7 @@ d3.select('#title')
   .text('D3 select() and selectAll() example');
 
 // Get values
-// Press Ctrl+Shift+J to open the Console tab in Google Crhome to see the logs
+// Press Ctrl+Shift+J to open the Console tab in Google Chrome to see the logs
 console.log('d3.select("#barM").attr("id"):', d3.select("#barM").attr("id")) // barM
 console.log('d3.select("#barM").style("fill"):', d3.select("#barM").style("fill")) // red
 console.log('d3.select("#barM").classed("highlight"):', d3.select("#barM").classed("highlight")) // true
