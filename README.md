@@ -18,7 +18,7 @@ or by using libraries placed locally
 //    |----css/
 //    |----data/
 //    |----libs/
-//         |----d3.min.js
+//         |----d3.v7.min.js
 //    |--js/
 ```
 ```html
