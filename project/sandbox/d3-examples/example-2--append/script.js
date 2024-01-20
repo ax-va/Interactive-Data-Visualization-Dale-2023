@@ -27,7 +27,7 @@ let buildCrudeBarchart = function() {
     .attr("height", height + margin.top + margin.bottom)
     .append("g")
     .classed('chart', true)
-    // Translate on margin.left px to right and margin.top down
+    // Translate on margin.left px to right and margin.top px down
     .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
   console.log('d3.select("#barchart").html():', d3.select("#barchart").html());
