@@ -29,5 +29,5 @@ function ready([
     initMenu()
     initMap(worldMap, countryNames)
     // TRIGGER UPDATE WITH
-}
+};
 
