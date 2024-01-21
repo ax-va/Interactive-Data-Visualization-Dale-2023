@@ -39,12 +39,12 @@ let buildCrudeBarchart = function() {
   */
 
   let barWidth = width / dummyData.length;
-  dummyData.forEach(function(entry, index) {
+  dummyData.forEach(function(dict, index) {
     svg.append('rect')
       .classed('bar', true)
-      .attr('height', entry.value)
+      .attr('height', dict.value)
       .attr('width', barWidth * 0.9)
-      .attr('y', height - entry.value)
+      .attr('y', height - dict.value)
       .attr('x', index * (barWidth));
   });
 };
