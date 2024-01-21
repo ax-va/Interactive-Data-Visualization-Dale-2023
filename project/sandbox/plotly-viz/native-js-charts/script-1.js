@@ -2,10 +2,6 @@ let dataJSON = d3.json('data/gender-award_age.json');
 
 dataJSON.then(function (data) {
 
-    // data = JSON.parse(
-    //     '[{"gender":"male","award_age":60},{"gender":"male","award_age":54},{"gender":"male","award_age":51}]'
-    // );
-
     console.log("Genders and award ages:", data);
 
     let traces = [
