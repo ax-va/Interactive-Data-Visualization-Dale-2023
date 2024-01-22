@@ -1,0 +1,42 @@
+[
+    {
+        "key": "United States",
+        "value": "336"
+    },
+    {
+        "key": "United Kingdom",
+        "value": 98
+    },
+    {
+        "key": "Germany",
+        "value": 79
+    },
+    {
+        "key": "France",
+        "value": 60
+    },
+    {
+        "key": "Sweden",
+        "value": 29
+    },
+    {
+        "key": "Switzerland",
+        "value": 23
+    },
+    {
+        "key": "Japan",
+        "value": 21
+    },
+    {
+        "key": "Russia",
+        "value": 19
+    },
+    {
+        "key": "Netherlands",
+        "value": 17
+    },
+    {
+        "key": "Austria",
+        "value": 14
+    }
+]
