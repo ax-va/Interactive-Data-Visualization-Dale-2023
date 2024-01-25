@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+
+<style>
+  svg {
+    width: 600px;
+    height: 400px;
+  }
+</style>
+
+<body>
+  <h2 id="title" style="font-family:sans-serif;">
+    D3 axis example
+  </h2>
+  <svg>
+    <g id='chart' transform='translate(20,20)'>
+      <g id='x-axis'></g>
+    </g>
+  </svg>
+  <script>
+      // Create a scale with a domain of 0 to 10
+      // and a range of 400 pixels
+      let xScale = d3.scaleLinear()
+        .domain([0, 10])
+        .range([0, 400]);
+      // Create a D3 bottom axis
+      let xAxis = d3.axisBottom()
+        .scale(xScale);
+      // Create the axis HTML using the "call" method
+      d3.select('#x-axis').call(xAxis);
+  </script>
+</body>

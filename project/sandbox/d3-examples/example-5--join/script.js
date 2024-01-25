@@ -21,8 +21,7 @@ function updateBars(data) {
   let svg = d3.select("#nobel-bar g");
   let bars = svg.selectAll(".bar").data(data);
 
-  bars
-  .join("rect") // Join the "bars" data to "rect" elements.
+  bars.join("rect") // Join the "bars" data to "rect" elements.
     // The join method returns all "rect" elements.
   .classed("bar", true)
   .attr("height", 10)
