@@ -19,16 +19,18 @@ let nobelWinners = [
 function updateBars(data) {
   // Select and store the SVG bars group
   let svg = d3.select("#nobel-bar g");
-  let bars = svg.selectAll(".bar").data(data);
+  let bars = svg.selectAll(".bar");
 
-  bars.join("rect") // Join the "bars" data to "rect" elements.
-    // The join method returns all "rect" elements.
-  .classed("bar", true)
-  .attr("height", 10)
-  .attr("width", d => d.value)
-  .attr("y", function (d, i) {
-    return i * 12;
-  });
+  bars
+  .data(data) // Pass data into bars.
+  .join("rect") // Append "rect" to bars.
+    // Make for each "rect"
+    .classed("bar", true)
+    .attr("height", 10)
+    .attr("width", d => d.value)
+    .attr("y", function (d, i) {
+      return i * 12;
+    });
 };
 
 updateBars(nobelWinners.slice(0, 4));
