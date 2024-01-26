@@ -229,7 +229,7 @@ https://vizhub.com/
 ## Simple example of reusable D3 plugin
 https://gist.github.com/cpbotha/5073718
 
-## D3 join()
+## D3 data() and join()
 https://d3js.org/d3-selection/joining
 
 ## D3 transition's demonstration by Mike Bostock
