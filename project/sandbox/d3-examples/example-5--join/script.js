@@ -22,11 +22,12 @@ function updateBars(data) {
   let bar = svgG.selectAll(".bars .bar");
 
   bar
-  .data(data) // Pass data into bars.
-  .join("rect") // Append "rect" to bars.
+  .data(data) // Pass data into section.
+  .join("rect") // Append "rect".
     // Make for each "rect":
     .classed("bar", true)
     .attr("height", 10)
+    .attr("opacity", 0.5)
     .attr("width", d => d.value)
     .attr("y", function (d, i) {
       return i * 12;
@@ -36,3 +37,4 @@ function updateBars(data) {
 updateBars(nobelWinners);
 updateBars(nobelWinners.slice(0, 4));
 updateBars(nobelWinners.slice(0, 2));
+
