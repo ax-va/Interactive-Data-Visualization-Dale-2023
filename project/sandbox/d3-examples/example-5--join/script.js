@@ -24,7 +24,7 @@ function updateBars(data) {
   bars
   .data(data) // Pass data into bars.
   .join("rect") // Append "rect" to bars.
-    // Make for each "rect"
+    // Make for each "rect":
     .classed("bar", true)
     .attr("height", 10)
     .attr("width", d => d.value)
