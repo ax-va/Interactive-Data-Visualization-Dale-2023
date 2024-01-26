@@ -92,7 +92,7 @@ function updateBarChart(data) {
 
   // Join data and make bars
   svgGG1.selectAll(".bar")
-    .data(data) // Pass data into empty section
+    .data(data) // Pass data into the section
     .join(
       function (enter) {
         return enter
