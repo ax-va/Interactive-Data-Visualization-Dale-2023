@@ -47,7 +47,7 @@ let svgG = chartHolder
   .attr('width', width + margin.left + margin.right)
   .attr('height', height + margin.top + margin.bottom)
   .append('g')
-  .attr('class', 'svg-g')
+  .attr('class', 'svg-group')
   .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
 // bars
@@ -91,17 +91,29 @@ function updateBarChart(data) {
   yScale.domain( [0, d3.max(data, d => +d.value)] );
 
   // Join data and make bars
-  svgGG1.selectAll(".bars")
+  svgGG1.selectAll(".bar")
     .data(data)
     .join(
-      (enter) => {
-        // Return the "enter" object to use after the join call
+      function (enter) {
         return enter
+          // Add new elements "rect .bar"
           .append('rect')
-          .attr('class', 'bar')
-          .attr('x', xPaddingLeft);
+          .attr('class', 'bar');
+      },
+      /*
+      // default:
+      function (update) {
+        // Make no update for existing elements ".bar"
+        return update;
+      },
+      // default:
+      function (exit) {
+        // Remove old elements ".bar"
+        return exit.remove();
       }
+      */
     )
+    // Update elements after join()
     .attr('id', d => "bar-" + d.code)
     .attr('x', d => xScale(d.code))
     .attr('width', xScale.bandwidth())
@@ -125,3 +137,4 @@ function updateBarChart(data) {
 };
 
 updateBarChart(nobelWinners);
+updateBarChart(nobelWinners.slice(0, 3));

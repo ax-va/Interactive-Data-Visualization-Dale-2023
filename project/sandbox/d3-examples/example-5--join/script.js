@@ -1,7 +1,7 @@
 // See also https://vizhub.com/ax-va/19322755fb004b26868fd7791c2ee827
 
-// Use the "join" method instead of
-// the "enter", "exit", and "remove" methods
+// Use the "join" method instead of using
+// the "enter", "update", "exit", methods separately
 
 let nobelWinners = [
   {key:'United States', value:336},
