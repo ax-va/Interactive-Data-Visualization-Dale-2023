@@ -92,11 +92,11 @@ function updateBarChart(data) {
 
   // Join data and make bars
   svgGG1.selectAll(".bar")
-    .data(data)
+    .data(data) // Pass data into empty section
     .join(
       function (enter) {
         return enter
-          // Add new elements "rect .bar"
+          // Append new elements "rect .bar"
           .append('rect')
           .attr('class', 'bar')
           .attr('opacity', 0.5);
@@ -139,3 +139,4 @@ function updateBarChart(data) {
 
 updateBarChart(nobelWinners);
 updateBarChart(nobelWinners.slice(0, 3));
+

@@ -22,7 +22,7 @@ function updateBars(data) {
   let bar = svgG.selectAll(".bars .bar");
 
   bar
-  .data(data) // Pass data into section.
+  .data(data) // Pass data into empty section.
   .join("rect") // Append "rect".
     // Make for each "rect":
     .classed("bar", true)
