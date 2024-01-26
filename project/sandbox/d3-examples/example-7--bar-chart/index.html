@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+  #barchart {
+    width: 600px;
+    height: 400px;
+  }
+
+  .bar {
+    fill: #FFB6C1; /* LightPink */
+  }
+
+  .x-axis {
+    font: 12px sans-serif;
+  }
+
+  .y-axis {
+    font: 15px sans-serif;
+  }
+
+  .axes path {
+    fill: none;
+    stroke: tomato;
+    shape-rendering: crispEdges;
+  }
+
+  #y-axis-label {
+    fill: none;
+    stroke: silver;
+  }
+</style>
+
+<body>
+  <h2 id="title" style="font-family:sans-serif;">
+    D3 bar chart example
+  </h2>
+  <div id="barchart">
+    <!-- placeholder for the bartchart -->
+  </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<script src="script.js"></script>
