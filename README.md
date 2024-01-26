@@ -232,7 +232,7 @@ https://gist.github.com/cpbotha/5073718
 ## D3 data() and join()
 https://d3js.org/d3-selection/joining
 
-## D3 data()'s key
+## D3 data()'s key function
 https://bost.ocks.org/mike/selection/#key
 
 ## D3 transition's demonstration by Mike Bostock
