@@ -18,10 +18,10 @@ let nobelWinners = [
 
 function updateBars(data) {
   // Select and store the SVG bars group
-  let svg = d3.select("#nobel-bar g");
-  let bars = svg.selectAll(".bar");
+  let svgG = d3.select("#nobel-bar g");
+  let bar = svgG.selectAll(".bars .bar");
 
-  bars
+  bar
   .data(data) // Pass data into bars.
   .join("rect") // Append "rect" to bars.
     // Make for each "rect":
@@ -33,6 +33,6 @@ function updateBars(data) {
     });
 };
 
+updateBars(nobelWinners);
 updateBars(nobelWinners.slice(0, 4));
 updateBars(nobelWinners.slice(0, 2));
-updateBars(nobelWinners.slice(0, 6));

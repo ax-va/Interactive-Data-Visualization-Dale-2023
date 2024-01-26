@@ -98,7 +98,8 @@ function updateBarChart(data) {
         return enter
           // Add new elements "rect .bar"
           .append('rect')
-          .attr('class', 'bar');
+          .attr('class', 'bar')
+          .attr('opacity', 0.5);
       },
       /*
       // default:
@@ -113,12 +114,12 @@ function updateBarChart(data) {
       }
       */
     )
-    // Update elements after join()
-    .attr('id', d => "bar-" + d.code)
-    .attr('x', d => xScale(d.code))
-    .attr('width', xScale.bandwidth())
-    .attr('y', d => yScale(d.value))
-    .attr('height', d => height - yScale(d.value));
+      // Update elements after join()
+      .attr('id', d => "bar-" + d.code)
+      .attr('x', d => xScale(d.code))
+      .attr('width', xScale.bandwidth())
+      .attr('y', d => yScale(d.value))
+      .attr('height', d => height - yScale(d.value));
 
   // Use the axes generators with the new scale domains
   svgGG2.select('.x-axis')
