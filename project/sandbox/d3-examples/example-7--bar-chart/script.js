@@ -83,12 +83,12 @@ svgGG2.append("g")
 function updateBarChart(data) {
   // Filter out any countries with zero prizes by value
   data = data.filter(function (d) {
-    return d.value > 0;
+    return +d.value > 0;
   });
 
   // Change the scale domains to reflect the newly filtered data
   xScale.domain( data.map(d => d.code) );
-  yScale.domain( [0, d3.max(data, d => +d.value)] );
+  yScale.domain( [0, d3.max(data, d => d.value)] );
 
   // Join data and make bars
   svgGG1.selectAll(".bar")
