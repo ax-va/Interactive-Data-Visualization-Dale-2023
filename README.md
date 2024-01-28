@@ -42,15 +42,6 @@ Press Ctrl+C to stop the server.
 ## Chrome
 Press Ctrl+Shift+I to open the Elements tab (or More Tools -> Developer Tools / Weitere Tools -> Entwicklertools).
 
-## MongoDB
-Install manually on Ubuntu:
-https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-ubuntu/
-
-Install manually on Windows:
-https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-windows/#run-mongodb-community-edition
-
-MongoDB with Docker: incompatible SSL libs: https://www.mongodb.com/community/forums/t/installing-mongodb-over-ubuntu-22-04/159931
-
 ## Jupyter
 Start Jupyter notebooks:
 ```commandline
