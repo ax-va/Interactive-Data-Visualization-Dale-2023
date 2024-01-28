@@ -32,7 +32,7 @@ function updateBars(data) {
     .attr("y", function (d, i) {
       return i * 12;
     });
-};
+}
 
 updateBars(nobelWinners);
 updateBars(nobelWinners.slice(0, 4));

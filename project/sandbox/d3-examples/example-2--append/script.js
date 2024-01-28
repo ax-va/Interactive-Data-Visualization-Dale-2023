@@ -47,6 +47,6 @@ let buildCrudeBarchart = function() {
       .attr('y', height - dict.value)
       .attr('x', index * (barWidth));
   });
-};
+}
 
 buildCrudeBarchart();

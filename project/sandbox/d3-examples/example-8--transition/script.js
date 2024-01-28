@@ -1,6 +1,10 @@
-// See also https://vizhub.com/ax-va/1d7f9a97f4924fd991a3e5ecfa7e6568
+// See also https://vizhub.com/ax-va/ba50683b08fa4df18d8f8f6d623f922c
 
-let nobelWinners = [
+const TRANSITION_DURATION = 2000; // ms
+
+let dataNum = 0;
+
+let oldData = [
   {key:'United States', value:"336", code:"USA"}, // string "336"
   {key:'United Kingdom', value:98, code:"GBR"},
   {key:'Germany', value:79, code:"DEU"},
@@ -11,7 +15,19 @@ let nobelWinners = [
   {key:'Russia', value:19, code:"RUS"},
   {key:'Netherlands', value:17, code:"NLD"},
   {key:'Austria', value:14, code:"AUT"},
-  {key:'Montenegro', value:0, code:"MNE"},
+];
+
+let newData = [
+  {key:'United Kingdom', value:98*3, code:"GBR"},
+  {key:'United States', value:"336", code:"USA"}, // string "336"
+  {key:'Japan', value:21*3, code:"JPN"},
+  {key:'Germany', value:79*6, code:"DEU"},
+  {key:'Switzerland', value:23*6, code:"CHE"},
+  {key:'France', value:60*7, code:"FRA"},
+  {key:'Russia', value:19*0, code:"RUS"},
+  {key:'Netherlands', value:17*9, code:"NLD"},
+  {key:'Austria', value:14*5, code:"AUT"},
+  {key:'Sweden', value:29*7, code:"SWE"},
 ];
 
 let chartHolder = d3.select('#barchart');
@@ -92,7 +108,10 @@ function updateBarChart(data) {
 
   // Join data and make bars
   svgGG1.selectAll(".bar")
-    .data(data) // Pass data into the section
+    .data(
+      data,
+      (d) => d.code // key function
+    )
     .join(
       function (enter) {
         return enter
@@ -101,7 +120,6 @@ function updateBarChart(data) {
           .attr('class', 'bar')
           .attr('opacity', 0.5);
       },
-      /*
       // default:
       function (update) {
         // Make no update for existing elements ".bar"
@@ -112,17 +130,21 @@ function updateBarChart(data) {
         // Remove old elements ".bar"
         return exit.remove();
       }
-      */
     )
-      // Update elements after join()
-      .attr('id', d => "bar-" + d.code)
-      .attr('x', d => xScale(d.code))
+      .transition()
+      .duration(TRANSITION_DURATION)
+      .delay(500)
+      .attr('id', (d) => "bar-" + d.code)
+      .attr('value', (d) => d.value)
+      .attr('x', (d) => xScale(d.code))
       .attr('width', xScale.bandwidth())
-      .attr('y', d => yScale(d.value))
-      .attr('height', d => height - yScale(d.value));
+      .attr('y', (d) => yScale(d.value))
+      .attr('height', (d) => height - yScale(d.value));
 
   // Use the axes generators with the new scale domains
   svgGG2.select('.x-axis')
+    .transition()
+    .duration(TRANSITION_DURATION)
     // Build the axes including ticks and tick labels
     .call(xAxis)
     // Manipulate the tick labels
@@ -133,10 +155,20 @@ function updateBarChart(data) {
     .attr("transform", "rotate(-65)");
 
   svgGG2.select('.y-axis')
+    .transition()
+    .duration(TRANSITION_DURATION)
     .call(yAxis);
 
 }
 
-updateBarChart(nobelWinners);
-updateBarChart(nobelWinners.slice(0, 3));
+function switchData() {
+  if (dataNum == 0) {
+    updateBarChart(oldData);
+    dataNum = 1;
+  } else {
+    updateBarChart(newData);
+    dataNum = 0;
+  }
+}
 
+switchData();
