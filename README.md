@@ -229,3 +229,5 @@ https://bost.ocks.org/mike/selection/#key
 ## D3 transition's demonstration by Mike Bostock
 https://bost.ocks.org/mike/constancy/
 
+## D3 ease
+https://github.com/d3/d3-ease#easeCubic
