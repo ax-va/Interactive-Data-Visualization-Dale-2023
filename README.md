@@ -231,3 +231,7 @@ https://bost.ocks.org/mike/constancy/
 
 ## D3 ease
 https://github.com/d3/d3-ease#easeCubic
+
+https://easings.net/
+
+https://observablehq.com/@d3/easing
