@@ -57,3 +57,32 @@ yearGroups:
   size: 2
   [[Prototype]]: Map
 */
+
+// destructuring assignment with [k, v]
+let keyValues = Array.from(yearGroups, ([k, v]) => {
+  console.log("key:", k);
+  console.log("type of key:", typeof(k));
+  console.log("value:", v);
+  console.log("type of value:", typeof(v));
+});
+/*
+key: 1901
+value:
+...
+  0: {year: 1901, name: 'Wilhelm Conrad R\\u00f6ntgen'}
+  1: {year: 1901, name: "Jacobus Henricus van 't Hoff"}
+  2: {year: 1901, name: 'Sully Prudhomme'}
+  3: {year: 1901, name: 'Fr\\u00e9d\\u00e9ric Passy'}
+  4: {year: 1901, name: 'Henry Dunant'}
+  5: {year: 1901, name: 'Emil Adolf von Behring'}
+...
+type of value: object
+key: 1902
+type of key: number
+value:
+...
+  0: {year: 1902, name: 'Theodor Mommsen'}
+  1: {year: 1902, name: 'Hermann Emil Fischer'}
+...
+type of value: object
+*/
