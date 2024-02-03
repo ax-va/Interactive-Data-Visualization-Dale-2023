@@ -23,7 +23,7 @@ d3.select("#barM")
 // "D3 select() and selectAll() example"
 d3.select('#title')
   .classed('fancy-title', true)
-  .text('D3 select() and selectAll() example');
+  .text('D3 select() and selectAll() examples');
 
 // Get values
 // Press Ctrl+Shift+J to open the Console tab in Google Chrome to see the logs
