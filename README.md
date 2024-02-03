@@ -235,3 +235,6 @@ https://github.com/d3/d3-ease#easeCubic
 https://easings.net/
 
 https://observablehq.com/@d3/easing
+
+## JavaScript: destructuring assignment
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
