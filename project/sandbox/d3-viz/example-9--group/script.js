@@ -67,6 +67,7 @@ let keyValues = Array.from(yearGroups, ([k, v]) => {
 });
 /*
 key: 1901
+type of key: number
 value:
 ...
   0: {year: 1901, name: 'Wilhelm Conrad R\\u00f6ntgen'}
