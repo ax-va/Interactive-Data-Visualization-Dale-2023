@@ -47,6 +47,7 @@ let fillCategory = function(cat) {
     return d3.schemeCategory10[i];
 }
 
+// Transform data to use with nested data() and join()
 let nestDataByYear = function(entries) {
     let yearGroups = d3.group(entries, (d) => d.year);
     let yearData = Array.from(yearGroups, ([k, v]) => {
@@ -139,6 +140,7 @@ categoryLabels.append('text')
     .attr('x', 25);
 
 let updateTimeChart = function (yearData) {
+  // The both are equivalent
   /*
     svgG.selectAll('.year')
         .data(
