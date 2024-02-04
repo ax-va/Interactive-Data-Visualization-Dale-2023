@@ -21,7 +21,7 @@ let xScale = d3
     // Padding factor of 0.1 is approximately 10% of a circle's (circular indicator's) diameter
     .padding(0.1)
     .domain(
-        d3.range(1901, 2015)
+        d3.range(1901, 2016) // [1901, ..., 2015]
     );
 
 let yScale = d3
@@ -74,7 +74,7 @@ categoryLabels.append('text')
     .attr('dy', '0.4em')
     .attr('x', 10);
 
-let updateTimeChart = function (yearData) {
+let updateTimeChart = function (data) {
     svgG.selectAll('.year')
         .data(
             yearData, 
@@ -87,7 +87,7 @@ let updateTimeChart = function (yearData) {
             .selectAll('circle') // circle marker
             .data(
                 (d) => d.winnersByYear, 
-                (winnersByYearEntry) => winnersByYearEntry.name // key function
+                (winner) => winner.name // key function
             )
             .join( 
                 function (enter) {
@@ -97,12 +97,12 @@ let updateTimeChart = function (yearData) {
                         .attr('cy', height);
                 } 
             )
-                .attr('fill', (winnersByYearEntry) => nbviz.fillCategory(winnersByYearEntry.category) )
+                .attr('fill', (winner) => nbviz.fillCategory(winner.category) )
                 .attr('cx', xScale.bandwidth() / 2)
                 .attr('r', xScale.bandwidth() / 2)
                 .transition() // All circles are eased into their y position
                 .duration(2000) // ms
-                .attr("cy", (winnersByYearEntry, i) => yScale(i));
+                .attr("cy", (winner, i) => yScale(i));
 }
 
 nbviz.callbacks.push( () => {
