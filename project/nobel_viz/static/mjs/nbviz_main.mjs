@@ -21,13 +21,13 @@ function ready([
     countryNames,
 ]) {
     // STORE OUR COUNTRY-DATA DATASET
-    nbviz.data.countryData = countryData
-    nbviz.data.winnersData = winnersData
+    nbviz.data.countryData = countryData;
+    nbviz.data.winnersData = winnersData;
     // MAKE OUR FILTER AND ITS DIMENSIONS
-    nbviz.makeFilterAndDimensions(winnersData) // Allow the user to select subsets of the data
+    nbviz.makeFilterAndDimensions(winnersData); // Allow the user to select subsets of the data
     // INITIALIZE MENU AND MAP
-    initMenu()
-    initMap(worldMap, countryNames)
+    initMenu();
+    initMap(worldMap, countryNames);
     // TRIGGER UPDATE WITH FULL WINNERS' DATASET
-    nbviz.onDataChange()
+    nbviz.onDataChange();
 }
