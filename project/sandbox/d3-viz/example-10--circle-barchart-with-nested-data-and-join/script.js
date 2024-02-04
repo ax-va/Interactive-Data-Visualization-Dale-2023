@@ -198,8 +198,8 @@ let updateTimeChart = function (yearData) {
 }
 
 updateTimeChart(nestDataByYear(myData));
-console.log("yScale(0)", yScale(0)); // yScale(0) 326.66666666666663
-console.log("yScale(1)", yScale(1)); // yScale(1) 303.3333333333333
-console.log("yScale(2)", yScale(2)); // yScale(2) 280
-console.log("yScale(3)", yScale(3)); // yScale(3) 256.66666666666663
-console.log("yScale(4)", yScale(4)); // yScale(4) 233.33333333333331
+console.log("yScale(0):", yScale(0)); // yScale(0): 326.66666666666663
+console.log("yScale(1):", yScale(1)); // yScale(1): 303.3333333333333
+console.log("yScale(2):", yScale(2)); // yScale(2): 280
+console.log("yScale(3):", yScale(3)); // yScale(3): 256.66666666666663
+console.log("yScale(4):", yScale(4)); // yScale(4): 233.33333333333331
