@@ -185,7 +185,8 @@ let updateTimeChart = function (yearData) {
       .join(
           function (enter) {
               return enter
-                  .append('circle');
+                  .append('circle')
+                  .attr('cy', height); // transition from bottom
           }
       )
         .attr('fill', (winner) => fillCategory(winner.category) )

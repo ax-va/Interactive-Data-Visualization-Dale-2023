@@ -94,7 +94,8 @@ let updateTimeChart = function (data) {
         .join( 
             function (enter) {
                 return enter
-                    .append('circle');
+                    .append('circle')
+                    .attr('cy', height); // transition from bottom
             } 
         )
             .attr('fill', (winner) => nbviz.fillCategory(winner.category) )
