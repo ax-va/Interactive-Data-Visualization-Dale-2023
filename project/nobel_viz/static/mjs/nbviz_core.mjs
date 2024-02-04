@@ -20,16 +20,24 @@ nbviz.CATEGORIES = [
 ];
 
 // Take a category like Physics and returns a color
-nbviz.categoryFill = function(category){
+nbviz.categoryFill = function(category) {
     let i = nbviz.CATEGORIES.indexOf(category);
-    // schemeCategory10 is an array of 10 color hex codes (['#1f77b4', '#ff7f0e',...])
+    // schemeCategory10 is an array of 10 color hex codes (['#1f77b4', '#ff7f0e', ...])
     return d3.schemeCategory10[i];
-};
+}
 
-
-let nestDataByYear = function(entries) {
-    //...
-};
+// Group by year and sort by category 
+nbviz.nestDataByYear = function(entries) {
+    let yearGroups = d3.group(entries, (d) => d.year);
+    let yearData = Array.from(yearGroups, ([k, v]) => {
+        // k for "key"
+        // v for "values"
+        let winnersByYear = v.sort(
+            (p1, p2) => (p1.category > p2.category ? 1 : -1));
+        return { yearAsKey: k, winnersByYear: winnersByYear };
+    });
+    return yearData;
+}
 
 // Create a Crossfilter filter and dimensions (e.g., prize category)
 nbviz.makeFilterAndDimensions = function(winnersData) {
@@ -43,7 +51,7 @@ nbviz.makeFilterAndDimensions = function(winnersData) {
     // // The filter can be used to return all objects with female gender as follows:
     // nbviz.genderDim.filter('female');
     // // top returns the specified number of ordered objects.
-    // // Specifying Infinity9 returns all the filtered data objects.
+    // // Specifying Infinity returns all the filtered data objects.
     // let femaleWinners = nbviz.genderDim.top(Infinity);
     // femaleWinners.length // 47
     // // Reset a dimension
@@ -76,15 +84,15 @@ nbviz.makeFilterAndDimensions = function(winnersData) {
     nbviz.countryDim = nbviz.filter.dimension((o) => o.country);
     nbviz.categoryDim = nbviz.filter.dimension((o) => o.category);
     nbviz.genderDim = nbviz.filter.dimension((o) => o.gender);
-};
+}
 
 nbviz.filterByCountries = function(countryNames) {
     //...
-};
+}
 
 nbviz.filterByCategory = function(cat) {
     //...
-};
+}
 
 nbviz.getCountryData = function() {
     // countryDim is Crossfilter dimensions with key-values items like {key:Argentina, value:5}
@@ -110,14 +118,14 @@ nbviz.getCountryData = function() {
     });
 
     return data;
-};
+}
 
 // The array consists of component modules that need updating
 nbviz.callbacks = [];
 // This function is called if the user changes something.
 nbviz.onDataChange = function () {
     nbviz.callbacks.forEach((cb) => cb())
-};
+}
 
 // The "nbviz" object is a default export for this module
 export default nbviz;

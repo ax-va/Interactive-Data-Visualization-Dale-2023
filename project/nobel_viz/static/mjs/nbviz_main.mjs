@@ -28,6 +28,6 @@ function ready([
     // INITIALIZE MENU AND MAP
     initMenu()
     initMap(worldMap, countryNames)
-    // TRIGGER UPDATE WITH
-};
-
+    // TRIGGER UPDATE WITH FULL WINNERS' DATASET
+    nbviz.onDataChange()
+}
