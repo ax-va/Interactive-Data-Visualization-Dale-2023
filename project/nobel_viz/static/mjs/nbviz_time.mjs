@@ -34,8 +34,8 @@ let yScale = d3
 let xAxis = d3
     .axisBottom()
     .scale(xScale)
-    .tickValues(xScale
-        .domain()
+    .tickValues(
+        xScale.domain()
         // Decades are given by 0 after the modulo operation, 
         // ! ("not") makes "true" from 0 ("false")
         .filter( (d, i) => !(d % 10) ) 
@@ -61,8 +61,8 @@ let categoryLabels = chartHolder
     // Join categories with data() and join()
     .data(nbviz.CATEGORIES)
     .join('g')
-    // Place vertically 10 pixels apart
-    .attr('transform', (d, i) => `translate(0, ${i * 10 })`);
+        // Place vertically 10 pixels apart
+        .attr('transform', (d, i) => `translate(0, ${i * 10 })`);
 
 // Add a circular indicator and text label to the legend
 categoryLabels.append('circle')
