@@ -83,26 +83,26 @@ let updateTimeChart = function (data) {
         .join('g')
             .classed('year', true)
             .attr('name', (d) => d.yearAsKey)
-            .attr('transform', (d) => `translate(${xScale(+d.yearAsKey)}, 0)`)
-            .selectAll('circle') // circle marker
-            .data(
-                (d) => d.winnersByYear, 
-                (winner) => winner.name // key function
-            )
-            .join( 
-                function (enter) {
-                    return enter
-                        .append('circle')
-                        // Any new circles start at the bottom of the chart
-                        .attr('cy', height);
-                } 
-            )
-                .attr('fill', (winner) => nbviz.fillCategory(winner.category) )
-                .attr('cx', xScale.bandwidth() / 2)
-                .attr('r', xScale.bandwidth() / 2)
-                .transition() // All circles are eased into their y position
-                .duration(2000) // ms
-                .attr("cy", (winner, i) => yScale(i));
+            .attr('transform', (d) => `translate(${xScale(+d.yearAsKey)}, 0)`);
+
+    svgG.selectAll('.year')
+        .selectAll('circle') // circle marker
+        .data(
+            (d) => d.winnersByYear, 
+            (winner) => winner.name // key function
+        )
+        .join( 
+            function (enter) {
+                return enter
+                    .append('circle');
+            } 
+        )
+            .attr('fill', (winner) => nbviz.fillCategory(winner.category) )
+            .attr('cx', xScale.bandwidth() / 2)
+            .attr('r', xScale.bandwidth() / 2)
+            .transition() // All circles are eased into their y position
+            .duration(2000) // ms
+            .attr("cy", (winner, i) => yScale(i));
 }
 
 nbviz.callbacks.push( () => {
