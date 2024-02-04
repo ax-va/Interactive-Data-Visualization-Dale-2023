@@ -66,7 +66,7 @@ let categoryLabels = chartHolder
 
 // Add a circular indicator and text label to the legend
 categoryLabels.append('circle')
-    .attr('fill', (nbviz.categoryFill)) // nbviz.categoryFill returns a color based on the category
+    .attr('fill', (nbviz.fillCategory)) // nbviz.fillCategory returns a color based on the category
     .attr('r', xScale.bandwidth() / 2); // bandwidth() returns the distance between two category labels
 
 categoryLabels.append('text')
@@ -97,7 +97,7 @@ let updateTimeChart = function (yearData) {
                         .attr('cy', height);
                 } 
             )
-                .attr('fill', (winnersByYearEntry) => nbviz.categoryFill(winnersByYearEntry.category) )
+                .attr('fill', (winnersByYearEntry) => nbviz.fillCategory(winnersByYearEntry.category) )
                 .attr('cx', xScale.bandwidth() / 2)
                 .attr('r', xScale.bandwidth() / 2)
                 .transition() // All circles are eased into their y position

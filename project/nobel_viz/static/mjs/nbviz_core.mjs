@@ -20,7 +20,7 @@ nbviz.CATEGORIES = [
 ];
 
 // Take a category like Physics and returns a color
-nbviz.categoryFill = function(category) {
+nbviz.fillCategory = function(category) {
     let i = nbviz.CATEGORIES.indexOf(category);
     // schemeCategory10 is an array of 10 color hex codes (['#1f77b4', '#ff7f0e', ...])
     return d3.schemeCategory10[i];
