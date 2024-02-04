@@ -41,7 +41,7 @@ let myData = [
   {year: 1901, name: "Bertha von Suttner", category: "Peace"},
 ];
 
-// Get a color
+// Get a color for a circle
 let fillCategory = function(cat) {
     let i = CATEGORIES.indexOf(cat);
     return d3.schemeCategory10[i];
