@@ -38,7 +38,7 @@ let myData = [
   {year: 1905, name: "Adolf von Baeyer", category: "Chemistry"},
   {year: 1905, name: "Robert Koch", category: "Physiology or Medicine"},
   {year: 1905, name: "Henryk Sienkiewicz", category: "Literature"},
-  {year: 1901, name: "Bertha von Suttner", category: "Peace"},
+  {year: 1905, name: "Bertha von Suttner", category: "Peace"},
 ];
 
 // Get a color for a circle
@@ -194,10 +194,31 @@ let updateTimeChart = function (yearData) {
         .attr('fill', (winner) => fillCategory(winner.category) )
         .attr('cx', xScale.bandwidth() / 2)
         .attr('r', 10) // radius
+        .transition()
+        .duration(2000)
         .attr("cy", (winner, i) => yScale(i));
 }
 
-updateTimeChart(nestDataByYear(myData));
+let yearData = nestDataByYear(myData);
+console.log("yearData:", yearData);
+/*
+yearData:
+  (5) [{…}, {…}, {…}, {…}, {…}]
+    0:
+      winnersByYear:Array(6)
+        0: {year: 1901, name: "Jacobus Henricus van 't Hoff", category: 'Chemistry'}
+        1: {year: 1901, name: 'Sully Prudhomme', category: 'Literature'}
+        2: {year: 1901, name: 'Frédéric Passy', category: 'Peace'}
+        3: {year: 1901, name: 'Henry Dunant', category: 'Peace'}
+        4: {year: 1901, name: 'Wilhelm Röntgen', category: 'Physics'}
+        5: {year: 1901, name: 'Emil von Behring', category: 'Physiology or Medicine'}
+        length: 6
+        [[Prototype]]: Array(0)
+      yearAsKey: 1901
+      [[Prototype]]: Object
+  ...
+*/
+updateTimeChart(yearData);
 console.log("yScale(0):", yScale(0)); // yScale(0): 326.66666666666663
 console.log("yScale(1):", yScale(1)); // yScale(1): 303.3333333333333
 console.log("yScale(2):", yScale(2)); // yScale(2): 280
