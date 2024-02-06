@@ -48,6 +48,17 @@ Start Jupyter notebooks:
 jupyter notebook
 ```
 
+## Install TopoJSON globally
+```commandline
+npm install -g topojson
+```
+
+## Convert an input GeoJSON into output TopoJSON
+```commandline
+geo2topo -o topo_output.json geo_input.json
+geo2topo geo_input.json > topo_output.json
+```
+
 ## PEP8 Online
 http://pep8online.com/
 
