@@ -129,11 +129,12 @@ let categoryLabels = chartHolder
       // Place vertically 25px apart
       .attr('transform', (d, i) => `translate(0, ${i * 25 })`);
 
-// Add a circular indicator and text label to the legend
+// Append circles to the legend
 categoryLabels.append('circle')
     .attr('fill', (fillCategory)) // fillCategory returns a color based on the category
     .attr('r', 10); // radius = 10px
 
+// Append text labels to the legend
 categoryLabels.append('text')
     .text(d => d)
     .attr('dy', '0.4em')
