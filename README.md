@@ -256,3 +256,9 @@ https://observablehq.com/@d3/easing
 
 ## JavaScript: destructuring assignment
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
+
+## TopoJSON
+https://github.com/topojson/topojson-server/tree/master
+
+topojson.py
+https://github.com/mattijn/topojson
