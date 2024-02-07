@@ -56,13 +56,13 @@ sudo apt update
 sudo apt install npm
 ```
 
+source: https://github.com/topojson/topojson-server/tree/master
 ```commandline
-sudo npm install -g topojson
+sudo npm install -g topojson-server
 ```
 
 ## Convert an input GeoJSON into output TopoJSON
 ```commandline
-geo2topo -o topo_output.json geo_input.json
 geo2topo geo_input.json > topo_output.json
 ```
 
