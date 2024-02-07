@@ -262,3 +262,6 @@ https://github.com/topojson/topojson-server/tree/master
 
 topojson.py
 https://github.com/mattijn/topojson
+
+## Projection extensions for D3
+https://github.com/d3/d3-geo-projection
