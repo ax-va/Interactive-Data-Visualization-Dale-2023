@@ -50,6 +50,8 @@ jupyter notebook
 
 ## Install TopoJSON globally
 ```commandline
+sudo apt update
+sudo apt install npm
 npm install -g topojson
 ```
 
