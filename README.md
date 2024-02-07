@@ -49,10 +49,15 @@ jupyter notebook
 ```
 
 ## Install TopoJSON globally
+
+preconditions:
 ```commandline
 sudo apt update
 sudo apt install npm
-npm install -g topojson
+```
+
+```commandline
+sudo npm install -g topojson
 ```
 
 ## Convert an input GeoJSON into output TopoJSON
