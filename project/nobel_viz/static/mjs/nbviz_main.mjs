@@ -10,7 +10,7 @@ import './nbviz_time.mjs';
 Promise.all([
     d3.json('static/data/nobel_winners_biopic.json'),
     d3.json('static/data/winning_country_data.json'),
-    d3.json('static/data/world-110m.json'), // a world map with 110m resolution, source?
+    d3.json('static/data/world-topojson-110m.json'), // world map with 110m resolution in the TopoJSON format
     d3.csv('static/data/world-country-names-nobel.csv'),    
 ]).then(ready);
     
