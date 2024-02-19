@@ -1,0 +1,36 @@
+#nobel-map {
+  background: azure;
+  width: 800px;
+  height: 400px;
+}
+
+.graticule {
+  fill: none;
+  stroke: #777;
+  stroke-width: 0.5px;
+  stroke-opacity: 0.5;
+}
+
+.land {
+  fill: lightgray;
+}
+
+.border {
+  fill: none;
+  stroke: black;
+  stroke-width: 0.5px;
+}
+
+.country {
+  fill: rgb(175, 195, 186); /* light green */
+}
+
+.country.active {
+  fill: rgb(155, 175, 166); /* dark green */
+}
+
+.centroid {
+  fill: red;
+  fill-opacity: 0.3;
+  pointer-events: none;
+}
