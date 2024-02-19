@@ -1,3 +1,5 @@
+// See also https://vizhub.com/ax-va/c4f1b70d57cb4f1ab079e310d6380a7f
+
 const MIN_CENTROID_RADIUS = 2;
 const MAX_CENTROID_RADIUS = 30;
 
