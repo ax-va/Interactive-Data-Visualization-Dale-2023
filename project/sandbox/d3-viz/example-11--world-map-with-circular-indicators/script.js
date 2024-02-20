@@ -52,14 +52,17 @@ Promise.all([
   d3.json('data/world-topojson-110m.json'),
   d3.csv('data/countries.csv'),
 ]).then(function ([worldMap, countryData]) {
+
   let land = topojson.feature(
     worldMap,
     worldMap.objects.land,
   );
+
   let countries = topojson.feature(
     worldMap,
     worldMap.objects.countries,
   ).features;
+
   let borders = topojson.mesh(
     worldMap,
     worldMap.objects.countries,
@@ -87,7 +90,7 @@ Promise.all([
   svg
     .insert('path', '.graticule')
     .datum(borders)
-    .attr('class', 'border')
+    .attr('class', 'country-border')
     .attr('d', path);
 
   // Insert counties value-indicators

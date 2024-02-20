@@ -15,18 +15,18 @@
   fill: lightgray;
 }
 
-.border {
-  fill: none;
-  stroke: black;
-  stroke-width: 0.5px;
-}
-
 .country {
   fill: rgb(175, 195, 186); /* light green */
 }
 
 .country.active {
   fill: rgb(155, 175, 166); /* dark green */
+}
+
+.country-border {
+  fill: none;
+  stroke: black;
+  stroke-width: 0.5px;
 }
 
 .centroid {
