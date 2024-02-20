@@ -161,7 +161,10 @@ Promise.all([
             // Get the mouse coordinates relative to the parent map group in pixels
             let mouseCoords = d3.pointer(event);
             tooltip.style('top', mouseCoords[1] + 'px');
-            tooltip.style('left', mouseCoords[0] + 'px');
+            tooltip.style(
+              'left',
+              mouseCoords[0] + 25 + 'px',
+            );
           })
           .on('mouseout', function (d) {
             // Hide the tooltip by placing it to the far left of the map
