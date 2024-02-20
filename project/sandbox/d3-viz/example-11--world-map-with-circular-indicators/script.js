@@ -44,15 +44,17 @@ let radiusScale = d3
   // Set "range". "domain" will be set later.
   .range([MIN_CENTROID_RADIUS, MAX_CENTROID_RADIUS]);
 
+// Transform longitude and latitude to [x, y] pixel positions
 let getCentroid = function (d) {
   return projection([d.longitude, d.latitude]);
 };
+
+let tooltip = d3.select('#map-tooltip');
 
 Promise.all([
   d3.json('data/world-topojson-110m.json'),
   d3.csv('data/countries.csv'),
 ]).then(function ([worldMap, countryData]) {
-
   let land = topojson.feature(
     worldMap,
     worldMap.objects.land,
@@ -138,10 +140,32 @@ Promise.all([
           .attr('name', (d) => d.name)
           .on('mouseenter', function (event, d) {
             // "this" is available only in "function", not by arrow "=>"
-            d3.select(this).classed('active', true);
-            //...
+            let country = d3
+              .select(this)
+              .classed('active', true);
+
+            // Don't do anything if the country is not visible
+            if (!country.classed('visible')) {
+              return;
+            }
+
+            let prizeString =
+              d.number === 1 ? 'winner' : 'winners';
+            prizeString =
+              d.number + ' Nobel Prize ' + prizeString;
+
+            // Set the header and text of the tooltip
+            tooltip.select('h2').text(d.name);
+            tooltip.select('p').text(prizeString);
+
+            // Get the mouse coordinates relative to the parent map group in pixels
+            let mouseCoords = d3.pointer(event);
+            tooltip.style('top', mouseCoords[1] + 'px');
+            tooltip.style('left', mouseCoords[0] + 'px');
           })
           .on('mouseout', function (d) {
+            // Hide the tooltip by placing it to the far left of the map
+            tooltip.style('left', '-9999px');
             // "this" is available only in "function", not by arrow "=>"
             d3.select(this).classed('active', false);
           });

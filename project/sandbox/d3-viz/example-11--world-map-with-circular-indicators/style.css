@@ -32,5 +32,20 @@
 .centroid {
   fill: red;
   fill-opacity: 0.3;
-  pointer-events: none;
+  pointer-events: none; /* Allow mouse events to propagate to country shapes */
+}
+
+#map-tooltip {
+  position: absolute;
+  pointer-events: none; /* Lets you click on things underneath the tooltip */
+  color: #eee;
+  font-size: 12px;
+  opacity: 0.7;
+  background: #222;
+  border: 2px solid #555;
+  border-color: goldenrod;
+  padding: 10px;
+  left: -999px; /* Initially, the tooltip must be hidden */
+  width: 100px;
+  height: 100px;
 }
