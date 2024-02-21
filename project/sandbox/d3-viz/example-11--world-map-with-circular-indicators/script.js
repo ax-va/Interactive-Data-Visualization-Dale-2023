@@ -1,4 +1,10 @@
-// See also https://vizhub.com/ax-va/c4f1b70d57cb4f1ab079e310d6380a7f
+/*
+See also https://vizhub.com/ax-va/c4f1b70d57cb4f1ab079e310d6380a7f
+
+TopoJSON source:
+https://github.com/Kyrand/dataviz-with-python-and-js-ed-2/blob/master/Part_5_Visualizing_your_Data_with_Plotly_and_D3/Ch.15-21_Nobel_Dataviz_with_D3/static/data/world-110m.json
+*/
+
 
 const MIN_CENTROID_RADIUS = 2;
 const MAX_CENTROID_RADIUS = 30;
