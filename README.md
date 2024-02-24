@@ -64,6 +64,7 @@ $ sudo npm install -g topojson-server
 ```unix
 $ geo2topo geo_input.json > topo_output.json
 ```
+You can also use the Python's `topojson` package.
 
 ## PEP8 Online
 http://pep8online.com/
