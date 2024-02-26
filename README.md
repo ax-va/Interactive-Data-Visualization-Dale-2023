@@ -13,13 +13,11 @@ https://cdnjs.com/libraries/d3
 ```
 or by using libraries placed locally
 ```
-// project/
-// |--static/
-//    |----css/
-//    |----data/
-//    |----libs/
-//         |----d3.v7.min.js
-//    |--js/
+project/
+|--static/
+   |--libs/
+      |--d3.v7.min.js
+   |--js/
 ```
 ```html
 <script src="/static/libs/d3.v7.min.js"></script>
