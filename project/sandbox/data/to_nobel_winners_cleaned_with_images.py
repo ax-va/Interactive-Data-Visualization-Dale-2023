@@ -30,6 +30,7 @@ print(df_nodel_winners_with_images.loc["Lê Đức Thọ"])
 # image_urls    [https://upload.wikimedia.org/wikipedia/common...
 # Name: Lê Đức Thọ, dtype: object
 
+# Merge the cleaned data and the data with ULRs
 df_nobel_winners_complete = (
     df_nobel_winners_cleaned
     .reset_index()
@@ -38,7 +39,8 @@ df_nobel_winners_complete = (
         how="left",
         on=["name"],
     )
-    .set_index("name"))
+    .set_index("name")
+)
 
 print(len(df_nobel_winners_complete))
 # 1197
@@ -60,6 +62,7 @@ print(df_nobel_winners_complete.loc["Lê Đức Thọ"])
 # image_urls        [https://upload.wikimedia.org/wikipedia/common...
 # Name: Lê Đức Thọ, dtype: object
 
+# way 1 to drop duplicates
 df_nobel_winners_complete = (
     df_nobel_winners_complete
     .reset_index()
@@ -70,22 +73,34 @@ df_nobel_winners_complete = (
 print(len(df_nobel_winners_complete))
 # 974
 
-# df_nobel_winners_complete = df_nobel_winners_complete.groupby(df_nobel_winners_complete.index).last()
-# print(len(df_nobel_winners_complete))
-# # 969
+"""
+# way 2 to drop duplicates
+df_nobel_winners_complete = (
+    df_nobel_winners_complete
+    .reset_index()
+    .set_index(["name", "year", "category"])
+)
 
-# # 5 entries are lost
+df_nobel_winners_complete = (
+    df_nobel_winners_complete
+    .groupby(df_nobel_winners_complete.index)
+    .last()
+    .reset_index()
+)
+print(len(df_nobel_winners_complete))
+# 974
+"""
 
-# # Iterate alternatively
-# df_nobel_winners_complete = df_nobel_winners_cleaned.copy()
-# for index, row in df_nobel_winners_complete.iterrows():
-#     if index in df_nodel_winners_with_images.index:
-#         row["image_urls"] = df_nodel_winners_with_images.loc[index]["image_urls"]
-#
-# print(len(df_nobel_winners_complete))
-# # 974
+"""
+# way 3 to drop duplicates
+df_nobel_winners_complete = df_nobel_winners_cleaned.copy()
+for index, row in df_nobel_winners_complete.iterrows():
+    if index in df_nodel_winners_with_images.index:
+        row["image_urls"] = df_nodel_winners_with_images.loc[index]["image_urls"]
 
-# # No entries are lost
+print(len(df_nobel_winners_complete))
+# 974
+"""
 
 df_nobel_winners_complete = df_nobel_winners_complete.reset_index()
 df_nobel_winners_complete.to_json(
