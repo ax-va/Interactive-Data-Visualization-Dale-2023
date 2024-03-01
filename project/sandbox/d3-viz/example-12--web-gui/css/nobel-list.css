@@ -1,0 +1,33 @@
+#nobel-list {
+  overflow: scroll; /* Add a scroll bar */
+  overflow-x: hidden; /* Inhibit the addition of a horizontal scroll bar */
+  width: 600px;
+  height: 300px;
+}
+
+#nobel-list table{
+  font-size: 10px;
+}
+
+#nobel-list table th#year {
+  width: 30px;
+}
+
+#nobel-list table th#category {
+  width: 120px;
+}
+
+#nobel-list table th#name {
+  width: 150px;
+}
+
+#nobel-list h2 {
+  font-size: 14px;
+  margin: 4px;
+  text-align: center;
+}
+
+#nobel-list tr:hover{ /* Highlight the row if the cursor is moved over it */
+  cursor: pointer;
+  background: lightblue;
+}

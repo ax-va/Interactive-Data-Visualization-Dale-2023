@@ -1,0 +1,42 @@
+#nobel-winner {
+  font-size: 11px;
+  overflow: auto;
+  overflow-x: hidden;
+  width: 600px;
+  height: 600px;
+}
+
+#nobel-winner #winner-title {
+  font-size: 12px;
+  text-align: center;
+  padding: 2px;
+  font-weight: bold;
+}
+
+#nobel-winner #info-box .label {
+  display: inline-block;
+  width: 60px;
+  font-weight: bold;
+}
+
+#nobel-winner #biography-box {
+  font-size: 11px;
+}
+
+#nobel-winner #biography-box p {
+  text-align: justify;
+}
+
+#nobel-winner #picture-box {
+  float: right;
+  margin-left: 5px;
+}
+
+#nobel-winner #picture-box img {
+  width: 100px;
+}
+
+#nobel-winner #readmore {
+  font-weight: bold;
+  text-align: center;
+}

@@ -1,0 +1,114 @@
+<!doctype html>
+<meta charset="utf-8" />
+<link
+  rel="stylesheet"
+  href="css/style.css"
+  type=""
+  media="screen"
+/>
+<link
+  rel="stylesheet"
+  href="css/nobel-menu.css"
+  type=""
+  media="screen"
+/>
+<link
+  rel="stylesheet"
+  href="css/nobel-list.css"
+  type=""
+  media="screen"
+/>
+<link
+  rel="stylesheet"
+  href="css/nobel-winner.css"
+  type=""
+  media="screen"
+/>
+<body>
+  <h2 id="title" style="font-family: sans-serif">
+    Web GUI example with D3 and Crossfilter2
+  </h2>
+  <div id="web-gui">
+    <div id="nobel-menu">
+      <div id="category-select">
+        Category
+        <select></select>
+      </div>
+      <div id="gender-select">
+        Gender
+        <select>
+          <option value="All">All</option>
+          <option value="female">Female</option>
+          <option value="male">Male</option>
+        </select>
+      </div>
+      <div id="country-select">
+        Country
+        <select></select>
+      </div>
+      <div id="metric-radio">
+        Colored by Categories:&nbsp;
+        <form>
+          <label
+            >yes
+            <input
+              type="radio"
+              name="mode"
+              value="0"
+              checked
+            />
+          </label>
+          <label
+            >no
+            <input type="radio" name="mode" value="1" />
+          </label>
+        </form>
+      </div>
+    </div>
+    <div id="nobel-list">
+      <h2>Nobel Prize winners' list</h2>
+      <table>
+        <thead>
+          <tr>
+            <th id="year">Year</th>
+            <th id="category">Category</th>
+            <th id="name">Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- placeholder for the table content like this: -->
+          <!-- <tr> -->
+          <!--   <td>2014</td> -->
+          <!--   <td>Chemistry</td> -->
+          <!--   <td>Eric Betzig</td> -->
+          <!-- </tr> -->
+        </tbody>
+      </table>
+    </div>
+    <div id="nobel-winner">
+      <div id="picture-box"><img></div>
+      <div id="winner-title"></div>
+      <div id="info-box">
+        <div class="property">
+          <div class="label">Category</div>
+          <span name="category"></span>
+        </div>
+        <div class="property">
+          <div class="label">Year</div>
+          <span name="year"></span>
+        </div>
+        <div class="property">
+          <div class="label">Country</div>
+          <span name="country"></span>
+        </div>
+      </div>
+      <div id="biography-box"></div>
+      <div id="readmore">
+        <a href="#">Read more at Wikipedia</a>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter2/1.5.4/crossfilter.min.js"></script>
+<script type="module" src="js/main.mjs"></script>
