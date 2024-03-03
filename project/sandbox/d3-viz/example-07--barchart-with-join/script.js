@@ -122,7 +122,13 @@ function updateBarChart(data) {
       .attr('x', (d) => xScale(d.code))
       .attr('width', xScale.bandwidth())
       .attr('y', (d) => yScale(d.value))
-      .attr('height', (d) => height - yScale(d.value));
+      .attr('height', (d) => height - yScale(d.value))
+      .attr('name', function (d, i) {
+          let sane_key = d.key.replace(/ /g, '_'); // regular expression
+          console.log('__data__ is: ' + JSON.stringify(d));
+          console.log('index is is: ' + JSON.stringify(i));
+          return 'bar__' + sane_key;
+    });
 
   // Use the axes generators with the new scale domains
   svgGG2.select('.x-axis')
