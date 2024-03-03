@@ -263,3 +263,9 @@ https://github.com/mattijn/topojson
 
 ## Projection extensions for D3
 https://github.com/d3/d3-geo-projection
+
+## D3 examples gallery
+https://observablehq.com/@d3/gallery
+
+## Some Numeric and Scientific Python Packages
+https://wiki.python.org/moin/NumericAndScientific
