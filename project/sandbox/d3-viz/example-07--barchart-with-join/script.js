@@ -115,7 +115,7 @@ function updateBarChart(data) {
       */
     )
       // Update elements after join().
-      // // Arguments (d, i) are for the datum and the index, respectively.
+      // Arguments (d, i) are for the datum and the index, respectively.
       .attr('id', (d) => "bar-" + d.code)
       .attr('x', (d) => xScale(d.code))
       .attr('width', xScale.bandwidth())

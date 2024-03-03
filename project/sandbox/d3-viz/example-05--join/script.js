@@ -28,7 +28,8 @@ function updateBars(data) {
     .classed("bar", true)
     .attr("height", 10)
     .attr("opacity", 0.5)
-    .attr("width", d => d.value)
+    // Arguments (d, i) are for the datum and the index, respectively
+    .attr("width", (d) => d.value)
     .attr("y", function (d, i) {
       return i * 12;
     });
