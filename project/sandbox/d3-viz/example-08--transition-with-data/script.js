@@ -114,6 +114,8 @@ function updateBarChart(data) {
     )
     .join(
       function (enter) {
+        // The "enter" method returns ".bar" placeholders
+        // that will be filled with remaining data
         return enter
           // Append new elements "rect .bar"
           .append('rect')
