@@ -267,5 +267,8 @@ https://github.com/d3/d3-geo-projection
 ## D3 examples gallery
 https://observablehq.com/@d3/gallery
 
-## Some Numeric and Scientific Python Packages
+## Numeric and Scientific Python Packages+ collection
 https://wiki.python.org/moin/NumericAndScientific
+
+## Jupyter Notebook collection
+https://github.com/jupyter/jupyter/wiki
