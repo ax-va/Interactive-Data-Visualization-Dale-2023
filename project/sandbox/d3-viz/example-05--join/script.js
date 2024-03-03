@@ -32,6 +32,12 @@ function updateBars(data) {
     .attr("width", (d) => d.value)
     .attr("y", function (d, i) {
       return i * 12;
+    })
+    .attr('name', function (d, i) {
+      let sane_key = d.key.replace(/ /g, '_'); // regular expression
+      console.log('__data__ is: ' + JSON.stringify(d));
+      console.log('index is is: ' + JSON.stringify(i));
+      return 'bar__' + sane_key;
     });
 }
 
