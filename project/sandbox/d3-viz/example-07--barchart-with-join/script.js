@@ -114,12 +114,13 @@ function updateBarChart(data) {
       }
       */
     )
-      // Update elements after join()
-      .attr('id', d => "bar-" + d.code)
-      .attr('x', d => xScale(d.code))
+      // Update elements after join().
+      // // Arguments (d, i) are for the datum and the index, respectively.
+      .attr('id', (d) => "bar-" + d.code)
+      .attr('x', (d) => xScale(d.code))
       .attr('width', xScale.bandwidth())
-      .attr('y', d => yScale(d.value))
-      .attr('height', d => height - yScale(d.value));
+      .attr('y', (d) => yScale(d.value))
+      .attr('height', (d) => height - yScale(d.value));
 
   // Use the axes generators with the new scale domains
   svgGG2.select('.x-axis')
