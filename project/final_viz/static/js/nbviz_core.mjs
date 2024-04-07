@@ -24,7 +24,7 @@ nbviz.fillCategory = function(category) {
     let i = nbviz.CATEGORIES.indexOf(category);
     // schemeCategory10 is an array of 10 color hex codes (['#1f77b4', '#ff7f0e', ...])
     return d3.schemeCategory10[i];
-}
+};
 
 // Group by year and sort by category 
 nbviz.nestDataByYear = function(entries) {
@@ -37,12 +37,14 @@ nbviz.nestDataByYear = function(entries) {
         return { yearAsKey: k, winnersByYear: winnersByYear };
     });
     return yearData;
-}
+};
 
 // Create a Crossfilter filter and dimensions (e.g., prize category)
 nbviz.makeFilterAndDimensions = function(winnersData) {
     // ADD OUR FILTER AND CREATE CATEGORY DIMENSIONS
     nbviz.filter = crossfilter(winnersData);
+
+    // Some examples
 
     // // Create the gender dimension
     // nbviz.genderDim = nbviz.filter.dimension(function(o) {
@@ -84,15 +86,33 @@ nbviz.makeFilterAndDimensions = function(winnersData) {
     nbviz.countryDim = nbviz.filter.dimension((o) => o.country);
     nbviz.categoryDim = nbviz.filter.dimension((o) => o.category);
     nbviz.genderDim = nbviz.filter.dimension((o) => o.gender);
-}
+};
 
 nbviz.filterByCountries = function(countryNames) {
-    //...
-}
+  if (!countryNames.length) {
+    nbviz.countryDim.filter();
+  } else {
+    nbviz.countryDim.filter(function (name) {
+      return countryNames.indexOf(name) > -1;
+    });
+  }
+
+  if (countryNames.length === 1) {
+    nbviz.activeCountry = countryNames[0];
+  } else {
+    nbviz.activeCountry = null;
+  }
+};
 
 nbviz.filterByCategory = function(cat) {
-    //...
-}
+  nbviz.activeCategory = cat;
+
+  if (cat === nbviz.ALL_CATS) {
+    nbviz.categoryDim.filter();
+  } else {
+    nbviz.categoryDim.filter(cat);
+  }
+};
 
 nbviz.getCountryData = function() {
     // countryDim is Crossfilter dimensions with key-values items like {key:Argentina, value:5}
@@ -103,13 +123,14 @@ nbviz.getCountryData = function() {
         let value = c.value;
         // If per capita value then divide by ppopulation size
         if(nbviz.valuePerCapita) {
-            value = value / cData.population;
+            value /= cData.population;
         };
 
         return {
             key: c.key, // e.g., Japan
             value: value, // e.g., 19 (prizes)
             code: cData.alpha3Code, // e.g., JPN
+            // population: cData.population
         };
     })
     // Use the array’s sort method to make the array descending by value
@@ -118,7 +139,7 @@ nbviz.getCountryData = function() {
     });
 
     return data;
-}
+};
 
 // The array consists of component modules that need updating
 nbviz.callbacks = [];
