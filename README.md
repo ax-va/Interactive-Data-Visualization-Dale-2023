@@ -7,7 +7,7 @@ These examples on Interactive Data Visualization in the browser are compiled wit
 ## Original code by Kyran Dale
 https://github.com/Kyrand/dataviz-with-python-and-js-ed-2
 
-## Adding JavaScript libs
+## Add JavaScript libs
 By using Cloudflare’s Content Delivery Network JS
 
 https://cdnjs.com/libraries/d3
@@ -27,7 +27,7 @@ project/
 <script src="/static/libs/d3.v7.min.js"></script>
 ```
 
-## Running JavaScript scripts in Chrome
+## Use JavaScript scripts in Chrome
 Start a development server in the 'project' directory using Python’s http module:
 ```unix
 python -m http.server 8080
