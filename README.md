@@ -1,5 +1,7 @@
 # Interactive-Data-Visualization-Dale-2023
 
+<img src="https://github.com/ax-va/Interactive-Data-Visualization-Dale-2023/blob/main/dataviz.png" width="700"/>
+
 ## Original code by Kyran Dale
 https://github.com/Kyrand/dataviz-with-python-and-js-ed-2
 
