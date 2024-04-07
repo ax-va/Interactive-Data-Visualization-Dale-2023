@@ -1,6 +1,10 @@
 # Interactive-Data-Visualization-Dale-2023
 
-These examples on Interactive Data Visualization in the browser are compiled with some modifications from the book "Data Visualization with Python and Javascript: Cleaning, Cleaning, Exploring, and Transforming Your Data" by Kyran Dale, published by O'Reilly Media in 2023. The examples related to Flask were moved to another repository https://github.com/ax-va/Python-Topics/tree/main/topics/flask_. 
+These examples on Interactive Data Visualization in the browser are compiled with some modifications from the book "Data Visualization with Python and Javascript: Cleaning, Cleaning, Exploring, and Transforming Your Data" by Kyran Dale, published by O'Reilly Media in 2023. The examples related to Flask were moved to another repository https://github.com/ax-va/Python-Topics/tree/main/topics/flask_. Some of them are also duplicated on VizHub https://vizhub.com/ax-va.
+70 / 5.000
+Übersetzungsergebnisse
+Übersetzung
+Some of them are also duplicated on VizHub https://vizhub.com/ax-va.
 
 <img src="https://github.com/ax-va/Interactive-Data-Visualization-Dale-2023/blob/main/dataviz.png" width="700"/>
 
