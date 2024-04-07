@@ -36,7 +36,7 @@ python -m http.server 8080
 ```
 Open the browser at:
 ```
-http://localhost:8080/sandbox/
+http://localhost:8080/
 ```
 Press `Ctrl+Shift+J` to open the Console tab in Chrome.
 
