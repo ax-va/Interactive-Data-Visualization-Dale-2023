@@ -26,7 +26,7 @@ project/
    |--js/
 ```
 ```html
-<script src="/static/libs/d3.v7.min.js"></script>
+<script src="/static/libs/d3.v8.min.js"></script>
 ```
 
 ## Use JavaScript scripts in Chrome
