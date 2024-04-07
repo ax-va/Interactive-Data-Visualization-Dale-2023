@@ -58,7 +58,7 @@ let updateList = function (data) {
 let displayWinner = function (wData) {
   let nw = d3.select("#nobel-winner");
   if (core.COLORED_TEXT_BY_CATEGORIES == "yes") {
-    nw.style("color", core.categoryFill(wData.category));
+    nw.style("color", core.fillCategory(wData.category));
   }
   else {
     nw.style("color", "black");

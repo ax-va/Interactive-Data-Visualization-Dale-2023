@@ -15,6 +15,7 @@ let svgG = chartHolder
     .append('g')
     .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
+// SCALES
 let xScale = d3
     .scaleBand()
     .range([0, width])
@@ -31,6 +32,7 @@ let yScale = d3
     // 14 is the historical maximum of prizes given in any one year
     .domain(d3.range(15));
 
+// AXIS
 let xAxis = d3
     .axisBottom()
     .scale(xScale)
@@ -51,6 +53,7 @@ svgG.append("g") // group to hold the axis
     .attr("dy", ".15em")
     .attr("transform", "rotate(-65)");
 
+// LABELS
 // Create a category legend
 let categoryLabels = chartHolder
     .select('svg')
@@ -66,7 +69,7 @@ let categoryLabels = chartHolder
 
 // Add a circular indicator and text label to the legend
 categoryLabels.append('circle')
-    .attr('fill', (nbviz.fillCategory)) // nbviz.fillCategory returns a color based on the category
+    .attr('fill', nbviz.fillCategory) // nbviz.fillCategory returns a color based on the category
     .attr('r', xScale.bandwidth() / 2); // bandwidth() returns the distance between two category labels
 
 categoryLabels.append('text')

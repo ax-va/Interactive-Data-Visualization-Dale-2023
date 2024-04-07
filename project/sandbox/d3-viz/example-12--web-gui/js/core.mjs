@@ -18,7 +18,7 @@ core.CATEGORIES = [
   'Physiology or Medicine',
 ];
 
-core.categoryFill = function (category) {
+core.fillCategory = function (category) {
   let i = core.CATEGORIES.indexOf(category);
   return d3.schemeCategory10[i];
 };

@@ -47,7 +47,7 @@ let displayWinner = function (wData) {
   let nw = d3.select("#nobel-winner");
 
   nw.select("#winner-title").text(wData.name);
-  nw.style("border-color", nbviz.categoryFill(wData.category));
+  nw.style("border-color", nbviz.fillCategory(wData.category));
 
   nw.selectAll(".property span").text(function (d) {
     var property = d3.select(this).attr("name");
