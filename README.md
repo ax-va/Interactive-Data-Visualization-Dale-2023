@@ -30,7 +30,7 @@ project/
 ```
 
 ## Use JavaScript scripts in Chrome
-Start a development server in the 'project' directory using Python’s http module:
+Start a development server in the `project` directory using Python’s http module:
 ```unix
 python -m http.server 8080
 ```
@@ -38,9 +38,9 @@ Open the browser at:
 ```
 http://localhost:8080/sandbox/
 ```
-Press `Ctrl+Shift+J` to open the Console tab.
+Press `Ctrl+Shift+J` to open the Console tab in Chrome.
 
-Press `Ctrl+C` to stop the server.
+Press `Ctrl+C` to stop the web server.
 
 ## Chrome
 Press `Ctrl+Shift+I` to open the Elements tab (or `More Tools -> Developer Tools / Weitere Tools -> Entwicklertools`).
