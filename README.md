@@ -3,7 +3,7 @@
 These examples on Interactive Data Visualization in the browser using `Flask` and `D3.js` are compiled with some modifications from the book "Data Visualization with Python and Javascript: Cleaning, Cleaning, Exploring, and Transforming Your Data" by Kyran Dale, published by O'Reilly Media in 2023. Some of them with D3.js are also duplicated on [VizHub](https://vizhub.com/ax-va). The examples related to `Flask`, `SQLAlchemy`, and `marshmallow` were moved to [another repository](https://github.com/ax-va/Python-Topics/tree/main/topics).
 
 <p align="center">
-  <img src="https://github.com/ax-va/Interactive-Data-Visualization-Dale-2023/blob/main/dataviz3.png" width="700" />
+  <img src="https://github.com/ax-va/Interactive-Data-Visualization-Dale-2023/blob/main/dataviz.png" width="700" />
 </p>
 
 ## Original code by Kyran Dale
