@@ -6,7 +6,7 @@ These examples on Interactive Data Visualization in the browser using `Flask` an
   <img src="https://github.com/ax-va/Interactive-Data-Visualization-Dale-2023/blob/main/dataviz.png" width="700" />
 </p>
 
-The content consits of two parts: an introduction into `JavaScript`, `HTML`, `CSS`, `Flex`, `SVG`, `Plotly`, and `D3.js` in the `sandbox` folder and a final project in the `final_viz` folder.
+The content consists of two parts: an introduction into `JavaScript`, `HTML`, `CSS`, `Flex`, `SVG`, `Plotly`, and `D3.js` in the `sandbox` folder and a final project in the `final_viz` folder.
 
 ## Original code by Kyran Dale
 https://github.com/Kyrand/dataviz-with-python-and-js-ed-2
