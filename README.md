@@ -66,7 +66,7 @@ source: https://github.com/topojson/topojson-server/tree/master
 $ sudo npm install -g topojson-server
 ```
 
-## Convert an input GeoJSON into output TopoJSON
+## Convert an input GeoJSON into an output TopoJSON
 ```unix
 $ geo2topo geo_input.json > topo_output.json
 ```
