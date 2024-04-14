@@ -10,7 +10,7 @@ The content consists of two parts: an introduction into `JavaScript`, `HTML`, `C
 The `final_viz` project running on the web server is shown in the image below.
 
 ```unix
-.../project/final_viz$ python -m http.server 8000
+.../project/final_viz$ python -m http.server 8080
 ```
 
 <p align="center">
