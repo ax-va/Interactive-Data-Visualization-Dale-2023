@@ -14,7 +14,7 @@ The final viz project running on the web server is shown in the image below.
 ```
 
 <p align="center">
-  <img src="https://github.com/ax-va/Interactive-Data-Visualization-Dale-2023/blob/main/final_viz.png" width="800" />
+  <img src="https://github.com/ax-va/Interactive-Data-Visualization-Dale-2023/blob/main/final_viz.png" width="900" />
 </p>
 
 ## Original code by Kyran Dale
