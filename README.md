@@ -14,7 +14,7 @@ The `final_viz` project with local data (without using `Flask`) running on the l
 ```
 
 <p align="center">
-  <img src="https://github.com/ax-va/Interactive-Data-Visualization-Dale-2023/blob/main/finalviz.png" width="900" />
+  <img src="https://github.com/ax-va/Interactive-Data-Visualization-Dale-2023/blob/main/final_viz.png" width="900" />
 </p>
 
 ## Original code by Kyran Dale
