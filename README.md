@@ -3,7 +3,7 @@
 These examples on Interactive Data Visualization in the browser using `Flask` and `D3.js` are compiled with some modifications from the book "Data Visualization with Python and JavaScript: Scrape, Clean, Explore, and Transform Your Data" by Kyran Dale, published by O'Reilly Media in 2023. Some of them with `D3.js` are also duplicated on my [VizHub](https://vizhub.com/ax-va). The examples related to `Flask`, `SQLAlchemy`, and `marshmallow`, and also `MongoDB`, `Scrapy`, and `Pandas` were moved to [another repository](https://github.com/ax-va/Python-Topics/tree/main/topics).
 
 <p align="center">
-  <img src="https://github.com/ax-va/Interactive-Data-Visualization-Dale-2023/blob/main/data_viz.png" width="700" />
+  <img src="https://github.com/ax-va/Interactive-Data-Visualization-Dale-2023/blob/main/dataviz.png" width="700" />
 </p>
 
 This content is mainly front-end oriented and consists of two parts: an introduction into `JavaScript`, `HTML`, `CSS`, `Flex`, `SVG`, `Plotly`, and `D3.js` in the `sandbox` folder and a final visualization project in the `final_viz` folder.
@@ -14,7 +14,7 @@ The `final_viz` project with local data (without using `Flask`) running on the l
 ```
 
 <p align="center">
-  <img src="https://github.com/ax-va/Interactive-Data-Visualization-Dale-2023/blob/main/final_viz.png" width="900" />
+  <img src="https://github.com/ax-va/Interactive-Data-Visualization-Dale-2023/blob/main/finalviz.png" width="900" />
 </p>
 
 ## Original code by Kyran Dale
