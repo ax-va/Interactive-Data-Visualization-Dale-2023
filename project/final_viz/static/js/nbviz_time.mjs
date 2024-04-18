@@ -77,10 +77,10 @@ categoryLabels.append('text')
     .attr('dy', '0.4em')
     .attr('x', 10);
 
-let updateTimeChart = function (data) {
+let updateTimeChart = function (yearData) {
     svgG.selectAll('.year')
         .data(
-            yearData, 
+            yearData,
             (d) => d.yearAsKey // key function
         )
         .join('g')
