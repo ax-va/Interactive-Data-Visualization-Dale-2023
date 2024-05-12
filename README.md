@@ -6,7 +6,7 @@ These examples on Interactive Data Visualization in the browser using `Flask` an
   <img src="https://github.com/ax-va/Interactive-Data-Visualization-Dale-2023/blob/main/dataviz.png" width="700" />
 </p>
 
-This content is mainly front-end oriented and consists of two parts: an introduction into `JavaScript`, `HTML`, `CSS`, `Flex`, `SVG`, `Plotly`, and `D3.js` in the `sandbox` folder and a final visualization project in the `final_viz` folder.
+This content is mainly front-end oriented and consists of two parts: an introduction to `JavaScript`, `HTML`, `CSS`, `Flex`, `SVG`, `Plotly`, and `D3.js` in the `sandbox` folder and a final visualization project in the `final_viz` folder.
 The `final_viz` project with local data (without using `Flask`) running on the local web server is shown in the image below.
 
 ```unix
