@@ -7,7 +7,7 @@ These examples on Interactive Data Visualization in the browser using `Flask` an
 </p>
 
 This content is mainly front-end oriented and consists of two parts: an introduction to `JavaScript`, `HTML`, `CSS`, `Flex`, `SVG`, `Plotly`, and `D3.js` in the `sandbox` folder and a final visualization project in the `final_viz` folder.
-The `final_viz` project with local data (without using `Flask`) running on the local HTTP server is shown in the image below.
+The `final_viz` project with local JSON data (without using `Flask` and any database) running on the local HTTP server is shown in the image below.
 
 ```unix
 .../project/final_viz$ python -m http.server 8080
