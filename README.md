@@ -9,7 +9,7 @@ In the book, Kyran Dale presents two web applications. The first one is built on
 </p>
 
 The content of this repository is mainly front-end oriented and consists of two parts: an introduction to `JavaScript`, `HTML`, `CSS`, `Flex`, `SVG`, `Plotly`, and `D3.js` in the `sandbox` folder and a final visualization project in the `final_viz` folder.
-The `final_viz` project with local data in JSON files (without using `Flask` and any database) running on the local HTTP server is shown in the image below.
+The `final_viz` project with local data in JSON files (without using `Flask` and any database) running on a local HTTP server is shown in the image below.
 
 ```unix
 .../project/final_viz$ python -m http.server 8080
