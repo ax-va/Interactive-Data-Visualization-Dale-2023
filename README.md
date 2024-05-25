@@ -5,7 +5,7 @@ These examples on Interactive Data Visualization in the browser using `Flask` an
 In the book, Kyran Dale presents two web applications. The first one is built on Flask and is a RESTful API for interaction between the database and other web applications. The second one is responsible for fetching the data and their interactive visualization. That is a microservice architecture.
 
 <p align="center">
-  <img src="https://github.com/ax-va/Interactive-Data-Visualization-Dale-2023/blob/main/dataviz.png" width="700" />
+  <img src="https://github.com/ax-va/Interactive-Data-Visualization-Dale-2023/blob/main/dataviz-toolchain.png" width="700" />
 </p>
 
 The content of this repository is mainly front-end oriented and consists of two parts: an introduction to `JavaScript`, `HTML`, `CSS`, `Flex`, `SVG`, `Plotly`, and `D3.js` in the `sandbox` folder and a final visualization project in the `final_viz` folder.
