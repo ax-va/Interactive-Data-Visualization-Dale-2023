@@ -1,4 +1,4 @@
-# Interactive-Data-Visualization-Dale-2023
+# Interactive Data Visualization with D3
 
 These examples on Interactive Data Visualization in the web browser using **Flask** RESTful API and **D3.js** are compiled with some modifications from the book *"Data Visualization with Python and JavaScript: Scrape, Clean, Explore, and Transform Your Data"*, Second Edition, written by Kyran Dale and published by *O'Reilly Media* in 2023. Some of them with **D3.js** are also duplicated on my [VizHub](https://vizhub.com/ax-va). The examples related to **Flask**, **SQLAlchemy**, and **marshmallow**, and also **MongoDB**, **BeautifulSoup** (**bs4**), **Scrapy**, and **pandas** were moved to my other [repository](https://github.com/ax-va/Python-Example-Collection).
 
